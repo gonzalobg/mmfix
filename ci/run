@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -ex
+
+OUT=target/
+CONF=model/rc11.cfg
+
+for f in `find ./tests -name "*.litmus" -type f`; do
+    herd7  -o $OUT -conf $CONF $f &> $f.expected
+done
