@@ -6,6 +6,5 @@ Witnesses
 Positive: 2 Negative: 0
 Condition forall (true)
 Observation a2+Racq+rel-acq Always 2 0
-Time a2+Racq+rel-acq 0.00
 Hash=f9204e78c4397cad7cbc6abe9d43cff6
 

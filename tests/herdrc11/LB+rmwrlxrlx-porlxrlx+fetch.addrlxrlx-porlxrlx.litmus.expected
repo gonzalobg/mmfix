@@ -8,6 +8,5 @@ Witnesses
 Positive: 0 Negative: 3
 Condition exists ([x]=2 /\ [y]=3 /\ 0:r0=1 /\ 1:r0=1)
 Observation LB+rmwrlxrlx-porlxrlx+fetch.addrlxrlx-porlxrlx Never 0 3
-Time LB+rmwrlxrlx-porlxrlx+fetch.addrlxrlx-porlxrlx 0.00
 Hash=811fb70431f64f24aae74f0a36b5f2a2
 

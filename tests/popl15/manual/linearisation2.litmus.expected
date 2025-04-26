@@ -6,6 +6,5 @@ Witnesses
 Positive: 0 Negative: 1
 Condition exists (0:t=2 /\ [w]=1 /\ [x]=1 /\ [y]=1 /\ [z]=1)
 Observation linearisation2 Never 0 1
-Time linearisation2 0.00
 Hash=a053a418e2b4bb0eaa0d717995884b30
 

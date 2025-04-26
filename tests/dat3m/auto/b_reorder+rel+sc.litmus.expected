@@ -9,6 +9,5 @@ Witnesses
 Positive: 1 Negative: 3
 Condition exists (0:r0=1 /\ 1:r1=1)
 Observation b_reorder+rel+sc Sometimes 1 3
-Time b_reorder+rel+sc 0.00
 Hash=5d556b731582a0fbdd58f6f061c6ac7c
 

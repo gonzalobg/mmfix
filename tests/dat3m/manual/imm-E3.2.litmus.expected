@@ -8,6 +8,5 @@ Witnesses
 Positive: 0 Negative: 3
 Condition exists (0:r0=0 /\ 1:r0=1)
 Observation imm-E3.2 Never 0 3
-Time imm-E3.2 0.00
 Hash=9ac6bdda2ce010a11fb63b0b2b03f3c4
 

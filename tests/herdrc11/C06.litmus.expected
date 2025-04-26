@@ -6,6 +6,5 @@ Witnesses
 Positive: 1 Negative: 0
 Condition forall ([x]=1)
 Observation C06 Always 1 0
-Time C06 0.00
 Hash=b442457ce55409f351e7a43e7132dc03
 

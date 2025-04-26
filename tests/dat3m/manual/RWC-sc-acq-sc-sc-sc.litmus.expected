@@ -13,6 +13,5 @@ Witnesses
 Positive: 1 Negative: 7
 Condition exists (1:r1=1 /\ 1:r2=0 /\ 2:r3=0)
 Observation RWC-sc-acq-sc-sc-sc Sometimes 1 7
-Time RWC-sc-acq-sc-sc-sc 0.00
 Hash=70aff27b10d5ed40d9ac9864207385fe
 

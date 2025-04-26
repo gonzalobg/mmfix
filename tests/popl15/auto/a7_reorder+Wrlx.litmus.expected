@@ -7,6 +7,5 @@ Positive: 3 Negative: 0
 Flag *undef*
 Condition forall (true)
 Observation a7_reorder+Wrlx Always 3 0
-Time a7_reorder+Wrlx 0.00
 Hash=34f2bb73eb0d86448a8578fc93a853a4
 

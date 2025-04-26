@@ -7,6 +7,5 @@ Witnesses
 Positive: 1 Negative: 1
 Condition exists (1:r1=1)
 Observation a3+acq+Crel-acq Sometimes 1 1
-Time a3+acq+Crel-acq 0.00
 Hash=14a65cdc69b301c32abef9a2fe9aea72
 

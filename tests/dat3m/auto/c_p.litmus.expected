@@ -6,6 +6,5 @@ Witnesses
 Positive: 0 Negative: 1
 Condition exists ([p]=1 /\ [q]=1)
 Observation c_p Never 0 1
-Time c_p 0.00
 Hash=832a80e9705131db0c52a9fa8f8bd411
 

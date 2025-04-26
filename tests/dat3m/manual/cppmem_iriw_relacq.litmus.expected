@@ -21,6 +21,5 @@ Witnesses
 Positive: 1 Negative: 15
 Condition exists (2:r1=1 /\ 2:r2=0 /\ 3:r3=1 /\ 3:r4=0)
 Observation cppmem_iriw_relacq Sometimes 1 15
-Time cppmem_iriw_relacq 0.01
 Hash=4049ba3f0193239f178552fc35047bfa
 

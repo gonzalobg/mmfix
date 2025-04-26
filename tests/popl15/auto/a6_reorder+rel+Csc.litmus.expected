@@ -7,6 +7,5 @@ Positive: 3 Negative: 0
 Flag *undef*
 Condition forall (true)
 Observation a6_reorder+rel+Csc Always 3 0
-Time a6_reorder+rel+Csc 0.00
 Hash=93fbc444f256b9fe35c0d3fe48e44561
 

@@ -6,6 +6,5 @@ Witnesses
 Positive: 3 Negative: 0
 Condition exists ([a]=1 /\ [x]=1 /\ [y]=1)
 Observation fig1 Always 3 0
-Time fig1 0.00
 Hash=26202fe38ab01fd938ce20ef034a0d0b
 

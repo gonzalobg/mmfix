@@ -11,6 +11,5 @@ Witnesses
 Positive: 1 Negative: 5
 Condition exists ([x]=2 /\ [y]=2 /\ 1:r0=1)
 Observation S+porlxrlx+posWrlxrlx-porlxrlx Sometimes 1 5
-Time S+porlxrlx+posWrlxrlx-porlxrlx 0.00
 Hash=aeba8df0705685bf4a5b3309ce3e8110
 

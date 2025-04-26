@@ -6,6 +6,5 @@ Witnesses
 Positive: 0 Negative: 1
 Condition exists ([p]=1 /\ [q]=1)
 Observation c_reorder Never 0 1
-Time c_reorder 0.00
 Hash=579ba0a1750a2b7378606b3edbbd02bd
 

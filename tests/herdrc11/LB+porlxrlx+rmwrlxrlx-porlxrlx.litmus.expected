@@ -8,6 +8,5 @@ Witnesses
 Positive: 0 Negative: 3
 Condition exists ([y]=2 /\ 0:r0=1 /\ 1:r0=1)
 Observation LB+porlxrlx+rmwrlxrlx-porlxrlx Never 0 3
-Time LB+porlxrlx+rmwrlxrlx-porlxrlx 0.00
 Hash=478ba61f055e14380ab54ae40f9735e7
 

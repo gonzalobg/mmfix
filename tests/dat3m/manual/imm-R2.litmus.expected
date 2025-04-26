@@ -16,6 +16,5 @@ Witnesses
 Positive: 0 Negative: 19
 Condition exists (1:r0=1 /\ 2:r0=3 /\ 2:r1=0)
 Observation imm-R2 Never 0 19
-Time imm-R2 0.01
 Hash=21e090460096e5a839ee629a5ee6b67b
 

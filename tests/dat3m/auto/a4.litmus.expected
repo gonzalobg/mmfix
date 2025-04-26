@@ -8,6 +8,5 @@ Witnesses
 Positive: 0 Negative: 3
 Condition exists (0:r1=0 /\ 1:r2=0)
 Observation a4 Never 0 3
-Time a4 0.00
 Hash=631326862a55d6969391e1fbc4f96fa1
 

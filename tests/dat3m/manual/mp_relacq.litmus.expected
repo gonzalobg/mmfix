@@ -7,6 +7,5 @@ Witnesses
 Positive: 0 Negative: 2
 Condition exists (1:r0=1 /\ 1:r1=0)
 Observation mp_relacq Never 0 2
-Time mp_relacq 0.00
 Hash=2296fc9e0714243e2d04fa68eca1973f
 

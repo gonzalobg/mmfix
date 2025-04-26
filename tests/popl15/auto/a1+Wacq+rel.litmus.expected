@@ -7,6 +7,5 @@ Witnesses
 Positive: 1 Negative: 1
 Condition exists ([x]=1 /\ [y]=1)
 Observation a1+Wacq+rel Sometimes 1 1
-Time a1+Wacq+rel 0.00
 Hash=37ec26c5639a2674706a15ca085d2206
 

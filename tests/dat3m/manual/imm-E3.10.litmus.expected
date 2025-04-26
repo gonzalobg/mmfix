@@ -7,6 +7,5 @@ Witnesses
 Positive: 0 Negative: 3
 Condition exists (0:r0=1 /\ 1:r0=1 /\ 1:r1=1)
 Observation imm-E3.10 Never 0 3
-Time imm-E3.10 0.00
 Hash=6e120d4cb286912638216b9c83aed720
 

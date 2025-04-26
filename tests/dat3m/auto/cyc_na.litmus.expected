@@ -6,6 +6,5 @@ Witnesses
 Positive: 0 Negative: 1
 Condition exists (0:r0=1 /\ 1:r1=1)
 Observation cyc_na Never 0 1
-Time cyc_na 0.00
 Hash=e2c2a2cf7037f092bacffe82f5f8feb4
 

@@ -7,6 +7,5 @@ Positive: 2 Negative: 0
 Flag *undef*
 Condition forall (true)
 Observation a7_reorder Always 2 0
-Time a7_reorder 0.00
 Hash=5bc03107147d3e1f3c591b1343216dac
 

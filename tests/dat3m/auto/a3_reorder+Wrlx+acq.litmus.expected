@@ -8,6 +8,5 @@ Positive: 2 Negative: 2
 Flag *undef*
 Condition exists (1:r1=1)
 Observation a3_reorder+Wrlx+acq Sometimes 2 2
-Time a3_reorder+Wrlx+acq 0.00
 Hash=48dc3859612b3ab458508a7d999969c5
 

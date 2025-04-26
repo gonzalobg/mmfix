@@ -7,6 +7,5 @@ Witnesses
 Positive: 1 Negative: 1
 Condition exists ([x]=1 /\ [y]=1)
 Observation a1+Crel+sc Sometimes 1 1
-Time a1+Crel+sc 0.00
 Hash=a0baa1f5fc3354330acbcf0081f0af4f
 

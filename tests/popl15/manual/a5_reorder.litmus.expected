@@ -7,6 +7,5 @@ Positive: 3 Negative: 0
 Flag *undef*
 Condition forall (true)
 Observation a5_reorder Always 3 0
-Time a5_reorder 0.00
 Hash=73a4b112a3d512dd06acdb8962460c9c
 

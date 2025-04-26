@@ -20,6 +20,5 @@ Witnesses
 Positive: 0 Negative: 15
 Condition exists (2:r1=1 /\ 2:r2=0 /\ 3:r3=1 /\ 3:r4=0)
 Observation iriw_sc Never 0 15
-Time iriw_sc 0.01
 Hash=f6466d7b06211dace732cf12c8ca265f
 
