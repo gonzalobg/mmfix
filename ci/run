@@ -2,7 +2,14 @@
 set -ex
 
 OUT=target/
-CONF=model/rc11.cfg
+
+MODEL=rc11
+
+if [ ! -z "$1" ]; then
+   MODEL=$1
+fi
+
+CONF=model/${MODEL}.cfg
 
 for f in `find ./tests -name "*.litmus" -type f`; do
     herd7  -o $OUT -conf $CONF $f &> $f.expected

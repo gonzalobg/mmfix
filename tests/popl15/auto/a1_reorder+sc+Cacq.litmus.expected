@@ -7,6 +7,6 @@ Positive: 3 Negative: 0
 Flag *undef*
 Condition exists ([x]=1 /\ [y]=1)
 Observation a1_reorder+sc+Cacq Always 3 0
-Time a1_reorder+sc+Cacq 0.00
+Time a1_reorder+sc+Cacq 0.01
 Hash=4d0357f7480857bcb31831aaca18a8ac
 
