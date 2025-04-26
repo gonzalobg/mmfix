@@ -1,0 +1,11 @@
+Test a5+rel+Crel Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a5+rel+Crel Always 2 0
+Time a5+rel+Crel 0.00
+Hash=fe75949b6a2310920c44fa9e4df1de46
+

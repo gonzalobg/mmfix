@@ -1,0 +1,11 @@
+Test a2 Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2 Always 2 0
+Time a2 0.00
+Hash=dd23f7d02851b1dd724fc0024dd6c8d3
+

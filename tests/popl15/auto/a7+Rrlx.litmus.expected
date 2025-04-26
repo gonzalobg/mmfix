@@ -1,0 +1,11 @@
+Test a7+Rrlx Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a7+Rrlx Always 2 0
+Time a7+Rrlx 0.00
+Hash=a57bfc2d527a318745aac988b6a9d9fe
+

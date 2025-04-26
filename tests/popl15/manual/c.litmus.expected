@@ -1,0 +1,11 @@
+Test c Allowed
+States 1
+[p]=0; [q]=0;
+No
+Witnesses
+Positive: 0 Negative: 1
+Condition exists ([p]=1 /\ [q]=1)
+Observation c Never 0 1
+Time c 0.00
+Hash=d2c7c195d9b8be608deb53b518150528
+

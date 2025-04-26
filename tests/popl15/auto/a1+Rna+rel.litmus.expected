@@ -1,0 +1,12 @@
+Test a1+Rna+rel Allowed
+States 2
+[x]=1; [y]=0;
+[x]=1; [y]=1;
+Ok
+Witnesses
+Positive: 1 Negative: 1
+Condition exists ([x]=1 /\ [y]=1)
+Observation a1+Rna+rel Sometimes 1 1
+Time a1+Rna+rel 0.00
+Hash=833847c266c2b01149ae0dbd06381816
+

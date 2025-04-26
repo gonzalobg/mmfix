@@ -1,0 +1,12 @@
+Test a6_reorder+sc+Wna Required
+States 1
+
+Undef
+Witnesses
+Positive: 3 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a6_reorder+sc+Wna Always 3 0
+Time a6_reorder+sc+Wna 0.00
+Hash=439bc04ba5bb296dd9d22b060b6ac315
+

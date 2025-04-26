@@ -1,0 +1,14 @@
+Test b_reorder+rlx+sc Allowed
+States 4
+0:r0=0; 1:r1=0;
+0:r0=0; 1:r1=1;
+0:r0=1; 1:r1=0;
+0:r0=1; 1:r1=1;
+Ok
+Witnesses
+Positive: 1 Negative: 3
+Condition exists (0:r0=1 /\ 1:r1=1)
+Observation b_reorder+rlx+sc Sometimes 1 3
+Time b_reorder+rlx+sc 0.00
+Hash=7bd74d0a49c22fd5e15566cba888394e
+

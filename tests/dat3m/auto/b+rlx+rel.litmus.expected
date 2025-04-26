@@ -1,0 +1,13 @@
+Test b+rlx+rel Allowed
+States 3
+0:r0=0; 1:r1=0;
+0:r0=0; 1:r1=1;
+0:r0=1; 1:r1=0;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (0:r0=1 /\ 1:r1=1)
+Observation b+rlx+rel Never 0 3
+Time b+rlx+rel 0.00
+Hash=fb0197c7ffdb7b9def3007d27ee5e03e
+

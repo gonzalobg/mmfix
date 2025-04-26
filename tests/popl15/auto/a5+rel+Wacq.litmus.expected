@@ -1,0 +1,11 @@
+Test a5+rel+Wacq Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a5+rel+Wacq Always 2 0
+Time a5+rel+Wacq 0.00
+Hash=50fcd153435455ef2997beaa06dcc234
+

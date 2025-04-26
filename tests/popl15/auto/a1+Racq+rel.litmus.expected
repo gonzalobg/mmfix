@@ -1,0 +1,12 @@
+Test a1+Racq+rel Allowed
+States 2
+[x]=1; [y]=0;
+[x]=1; [y]=1;
+Ok
+Witnesses
+Positive: 1 Negative: 1
+Condition exists ([x]=1 /\ [y]=1)
+Observation a1+Racq+rel Sometimes 1 1
+Time a1+Racq+rel 0.00
+Hash=998cb6c60a8cf69edf82f8924902a219
+

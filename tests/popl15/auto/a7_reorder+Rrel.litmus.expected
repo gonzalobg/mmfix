@@ -1,0 +1,12 @@
+Test a7_reorder+Rrel Required
+States 1
+
+Undef
+Witnesses
+Positive: 2 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a7_reorder+Rrel Always 2 0
+Time a7_reorder+Rrel 0.00
+Hash=365f647f54e6eb5beb11f6e577fcc825
+

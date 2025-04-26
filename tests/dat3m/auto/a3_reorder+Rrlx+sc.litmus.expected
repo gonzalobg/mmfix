@@ -1,0 +1,13 @@
+Test a3_reorder+Rrlx+sc Allowed
+States 2
+1:r1=0;
+1:r1=1;
+Undef
+Witnesses
+Positive: 2 Negative: 2
+Flag *undef*
+Condition exists (1:r1=1)
+Observation a3_reorder+Rrlx+sc Sometimes 2 2
+Time a3_reorder+Rrlx+sc 0.00
+Hash=62d0ee49c15c4ef2328e8d3fba143a19
+

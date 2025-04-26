@@ -1,0 +1,11 @@
+Test a7+Wrel Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a7+Wrel Always 2 0
+Time a7+Wrel 0.00
+Hash=3fb67ef7e50292946ecd31c868e9df9d
+

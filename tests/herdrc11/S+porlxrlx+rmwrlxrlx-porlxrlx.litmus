@@ -1,0 +1,21 @@
+C S+porlxrlx+rmwrlxrlx-porlxrlx
+"PodWWRlxRlx RfeRlxRlx ExchRlxRlx PodWWRlxRlx CoeRlxRlx"
+Cycle=RfeRlxRlx ExchRlxRlx PodWWRlxRlx CoeRlxRlx PodWWRlxRlx
+Generator=diycross7 (version 7.58+1)
+Prefetch=0:x=F,0:y=W,1:y=F,1:x=W
+Com=Rf Co
+Orig=PodWWRlxRlx RfeRlxRlx ExchRlxRlx PodWWRlxRlx CoeRlxRlx
+
+{}
+
+P0 (atomic_int* y,atomic_int* x) {
+  atomic_store_explicit(x,2,memory_order_relaxed);
+  atomic_store_explicit(y,1,memory_order_relaxed);
+}
+
+P1 (atomic_int* y,atomic_int* x) {
+  int r0 = atomic_exchange_explicit(y,2,memory_order_relaxed);
+  atomic_store_explicit(x,1,memory_order_relaxed);
+}
+
+exists ([x]=2 /\ [y]=2 /\ 1:r0=1)

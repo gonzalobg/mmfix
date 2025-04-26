@@ -1,0 +1,11 @@
+Test rseq_weak2 Allowed
+States 1
+[x]=3; [y]=1;
+Ok
+Witnesses
+Positive: 3 Negative: 0
+Condition exists ([x]=3 /\ [y]=1)
+Observation rseq_weak2 Always 3 0
+Time rseq_weak2 0.00
+Hash=a1fe17d5c1a22270904f1600b518f9a9
+

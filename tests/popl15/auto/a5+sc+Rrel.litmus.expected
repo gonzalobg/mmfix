@@ -1,0 +1,11 @@
+Test a5+sc+Rrel Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a5+sc+Rrel Always 2 0
+Time a5+sc+Rrel 0.00
+Hash=6dda06b5f7d0ca0482da89f618534a4a
+

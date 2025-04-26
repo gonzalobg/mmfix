@@ -1,0 +1,12 @@
+Test a6_reorder+sc+Csc Required
+States 1
+
+Undef
+Witnesses
+Positive: 3 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a6_reorder+sc+Csc Always 3 0
+Time a6_reorder+sc+Csc 0.00
+Hash=a21881c3017e194ba775db2e330d1fc5
+

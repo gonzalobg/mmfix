@@ -1,0 +1,12 @@
+Test a7_reorder+Racq Required
+States 1
+
+Undef
+Witnesses
+Positive: 2 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a7_reorder+Racq Always 2 0
+Time a7_reorder+Racq 0.00
+Hash=6933095a8942cc8b7967f18b6946decf
+

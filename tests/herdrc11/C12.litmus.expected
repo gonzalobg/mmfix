@@ -1,0 +1,11 @@
+Test C12 Required
+States 1
+[x]=1;
+Ok
+Witnesses
+Positive: 1 Negative: 0
+Condition forall ([x]=1)
+Observation C12 Always 1 0
+Time C12 0.00
+Hash=17c3538e1d8870eb1bb0ac35f89243af
+

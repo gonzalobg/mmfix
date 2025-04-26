@@ -1,0 +1,11 @@
+Test a2+Wrlx+rel Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Wrlx+rel Always 2 0
+Time a2+Wrlx+rel 0.00
+Hash=3e7d2f2280db58ce87b93340840f3ee3
+

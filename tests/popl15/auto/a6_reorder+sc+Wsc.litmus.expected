@@ -1,0 +1,12 @@
+Test a6_reorder+sc+Wsc Required
+States 1
+
+Undef
+Witnesses
+Positive: 3 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a6_reorder+sc+Wsc Always 3 0
+Time a6_reorder+sc+Wsc 0.00
+Hash=5cb5fcd1c9f4104db1a055cbe00ad9a5
+

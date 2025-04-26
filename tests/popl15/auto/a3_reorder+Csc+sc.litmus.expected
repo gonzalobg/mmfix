@@ -1,0 +1,13 @@
+Test a3_reorder+Csc+sc Allowed
+States 2
+1:r1=0;
+1:r1=1;
+Undef
+Witnesses
+Positive: 2 Negative: 2
+Flag *undef*
+Condition exists (1:r1=1)
+Observation a3_reorder+Csc+sc Sometimes 2 2
+Time a3_reorder+Csc+sc 0.00
+Hash=07423bbbd06d3a5cb6d24ed50f04c5d2
+

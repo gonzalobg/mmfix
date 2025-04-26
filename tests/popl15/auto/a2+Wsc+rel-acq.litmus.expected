@@ -1,0 +1,11 @@
+Test a2+Wsc+rel-acq Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Wsc+rel-acq Always 2 0
+Time a2+Wsc+rel-acq 0.00
+Hash=25638a61edb2a0383a941b81509e673d
+

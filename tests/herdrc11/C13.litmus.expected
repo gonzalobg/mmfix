@@ -1,0 +1,11 @@
+Test C13 Allowed
+States 1
+0:r1=0; 0:r2=0; 1:r4=0;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (not (0:r1=0))
+Observation C13 Never 0 3
+Time C13 0.00
+Hash=45b06aedc4caf5ef4fdf494a986f8199
+

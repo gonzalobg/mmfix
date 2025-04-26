@@ -1,0 +1,11 @@
+Test a7+Crel-acq Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a7+Crel-acq Always 2 0
+Time a7+Crel-acq 0.00
+Hash=595ff101c75376305ca6ba6899c0d3e8
+

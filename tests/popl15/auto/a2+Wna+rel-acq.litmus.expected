@@ -1,0 +1,11 @@
+Test a2+Wna+rel-acq Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Wna+rel-acq Always 2 0
+Time a2+Wna+rel-acq 0.00
+Hash=4bb9e543f50a33c4e16a365e4e5ef31e
+

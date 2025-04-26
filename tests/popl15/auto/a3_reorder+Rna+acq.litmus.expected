@@ -1,0 +1,13 @@
+Test a3_reorder+Rna+acq Allowed
+States 2
+1:r1=0;
+1:r1=1;
+Undef
+Witnesses
+Positive: 2 Negative: 2
+Flag *undef*
+Condition exists (1:r1=1)
+Observation a3_reorder+Rna+acq Sometimes 2 2
+Time a3_reorder+Rna+acq 0.00
+Hash=0802fe03e37ece2fff486c240b44c15e
+

@@ -1,0 +1,11 @@
+Test a2+Cacq+sc Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Cacq+sc Always 2 0
+Time a2+Cacq+sc 0.00
+Hash=7ed7dbb2a6908e02bf52a1fbfacc69fe
+

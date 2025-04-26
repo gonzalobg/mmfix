@@ -1,0 +1,11 @@
+Test roachmotel Allowed
+States 1
+[a]=1; [x]=0; [y]=0; [z]=1;
+No
+Witnesses
+Positive: 0 Negative: 1
+Condition exists ([a]=1 /\ [z]=1 /\ [x]=1 /\ [y]=1)
+Observation roachmotel Never 0 1
+Time roachmotel 0.00
+Hash=4f3c7ffdb179e9588a37a6053351fffd
+

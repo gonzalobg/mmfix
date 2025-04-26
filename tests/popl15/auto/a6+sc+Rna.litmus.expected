@@ -1,0 +1,11 @@
+Test a6+sc+Rna Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a6+sc+Rna Always 2 0
+Time a6+sc+Rna 0.00
+Hash=5e27444cae775e8791cc29887ef37ca3
+

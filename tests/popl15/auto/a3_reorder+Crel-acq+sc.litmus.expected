@@ -1,0 +1,13 @@
+Test a3_reorder+Crel-acq+sc Allowed
+States 2
+1:r1=0;
+1:r1=1;
+Undef
+Witnesses
+Positive: 2 Negative: 2
+Flag *undef*
+Condition exists (1:r1=1)
+Observation a3_reorder+Crel-acq+sc Sometimes 2 2
+Time a3_reorder+Crel-acq+sc 0.00
+Hash=d361cfacc7d199d8d20fe555fdcc3489
+

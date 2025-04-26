@@ -1,0 +1,12 @@
+Test a6_reorder+sc+Racq Required
+States 1
+
+Undef
+Witnesses
+Positive: 3 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a6_reorder+sc+Racq Always 3 0
+Time a6_reorder+sc+Racq 0.00
+Hash=88a2e72a500beeeb6267555f0cf02729
+

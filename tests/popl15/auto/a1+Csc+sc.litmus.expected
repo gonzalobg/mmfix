@@ -1,0 +1,12 @@
+Test a1+Csc+sc Allowed
+States 2
+[x]=1; [y]=1;
+[x]=1; [y]=2;
+Ok
+Witnesses
+Positive: 1 Negative: 1
+Condition exists ([x]=1 /\ [y]=1)
+Observation a1+Csc+sc Sometimes 1 1
+Time a1+Csc+sc 0.00
+Hash=3ef0709413088fdc1509da65bcc4326d
+

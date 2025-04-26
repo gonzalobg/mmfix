@@ -1,0 +1,11 @@
+Test c_pq Allowed
+States 1
+[p]=0; [q]=0;
+No
+Witnesses
+Positive: 0 Negative: 1
+Condition exists ([p]=1 /\ [q]=1)
+Observation c_pq Never 0 1
+Time c_pq 0.01
+Hash=3e0e10d3d5812faf9a280f3881ea5f19
+

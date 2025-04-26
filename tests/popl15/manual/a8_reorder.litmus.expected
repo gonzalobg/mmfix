@@ -1,0 +1,12 @@
+Test a8_reorder Required
+States 1
+
+Undef
+Witnesses
+Positive: 3 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a8_reorder Always 3 0
+Time a8_reorder 0.00
+Hash=bc9d74adba178314864f174266131b91
+

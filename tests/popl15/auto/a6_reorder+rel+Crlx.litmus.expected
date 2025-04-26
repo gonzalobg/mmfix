@@ -1,0 +1,12 @@
+Test a6_reorder+rel+Crlx Required
+States 1
+
+Undef
+Witnesses
+Positive: 3 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a6_reorder+rel+Crlx Always 3 0
+Time a6_reorder+rel+Crlx 0.00
+Hash=d0009cb8e5b610e7f7953a33c3377641
+

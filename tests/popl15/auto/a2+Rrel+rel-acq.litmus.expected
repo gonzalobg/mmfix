@@ -1,0 +1,11 @@
+Test a2+Rrel+rel-acq Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Rrel+rel-acq Always 2 0
+Time a2+Rrel+rel-acq 0.00
+Hash=3e4eae7fd5ab32ac7f9400d5f9741170
+

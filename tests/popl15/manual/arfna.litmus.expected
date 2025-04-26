@@ -1,0 +1,11 @@
+Test arfna Allowed
+States 1
+[x]=0; [y]=0;
+No
+Witnesses
+Positive: 0 Negative: 1
+Condition exists ([x]=1 /\ [y]=1)
+Observation arfna Never 0 1
+Time arfna 0.00
+Hash=94dcbd45104edba6e088c7bebfce30f3
+

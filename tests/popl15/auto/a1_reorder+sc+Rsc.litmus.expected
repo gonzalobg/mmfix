@@ -1,0 +1,13 @@
+Test a1_reorder+sc+Rsc Allowed
+States 2
+[x]=1; [y]=0;
+[x]=1; [y]=1;
+Undef
+Witnesses
+Positive: 2 Negative: 1
+Flag *undef*
+Condition exists ([x]=1 /\ [y]=1)
+Observation a1_reorder+sc+Rsc Sometimes 2 1
+Time a1_reorder+sc+Rsc 0.00
+Hash=86e9e2da358053312911a72e1f7a844a
+

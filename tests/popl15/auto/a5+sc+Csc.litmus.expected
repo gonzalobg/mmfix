@@ -1,0 +1,11 @@
+Test a5+sc+Csc Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a5+sc+Csc Always 2 0
+Time a5+sc+Csc 0.00
+Hash=7878a2a782bd29124b3be510ef9ccbae
+

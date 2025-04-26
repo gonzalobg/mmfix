@@ -1,0 +1,21 @@
+C LB+rmwrlxrlx-porlxrlx+fetch.addrlxrlx-porlxrlx
+"ExchRlxRlx PodWWRlxRlx RfeRlxRlx Fetch.AddRlxRlx PodWWRlxRlx RfeRlxRlx"
+Cycle=RfeRlxRlx ExchRlxRlx PodWWRlxRlx RfeRlxRlx Fetch.AddRlxRlx PodWWRlxRlx
+Generator=diycross7 (version 7.58+1)
+Prefetch=0:x=F,0:y=W,1:y=F,1:x=W
+Com=Rf Rf
+Orig=ExchRlxRlx PodWWRlxRlx RfeRlxRlx Fetch.AddRlxRlx PodWWRlxRlx RfeRlxRlx
+
+{}
+
+P0 (atomic_int* y,atomic_int* x) {
+  int r0 = atomic_exchange_explicit(x,2,memory_order_relaxed);
+  atomic_store_explicit(y,1,memory_order_relaxed);
+}
+
+P1 (atomic_int* y,atomic_int* x) {
+  int r0 = atomic_fetch_add_explicit(y,2,memory_order_relaxed);
+  atomic_store_explicit(x,1,memory_order_relaxed);
+}
+
+exists ([x]=2 /\ [y]=3 /\ 0:r0=1 /\ 1:r0=1)

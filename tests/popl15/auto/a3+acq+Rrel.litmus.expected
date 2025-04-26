@@ -1,0 +1,12 @@
+Test a3+acq+Rrel Allowed
+States 2
+1:r1=0;
+1:r1=1;
+Ok
+Witnesses
+Positive: 1 Negative: 1
+Condition exists (1:r1=1)
+Observation a3+acq+Rrel Sometimes 1 1
+Time a3+acq+Rrel 0.00
+Hash=4b2fd3da29534ad1c0a4e01b4360a771
+

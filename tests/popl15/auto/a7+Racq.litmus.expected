@@ -1,0 +1,11 @@
+Test a7+Racq Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a7+Racq Always 2 0
+Time a7+Racq 0.00
+Hash=823024af5635edb8429f81da5141767e
+

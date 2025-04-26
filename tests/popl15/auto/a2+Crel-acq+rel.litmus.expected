@@ -1,0 +1,11 @@
+Test a2+Crel-acq+rel Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Crel-acq+rel Always 2 0
+Time a2+Crel-acq+rel 0.00
+Hash=32f1521a008ef28395a57b0be2f5eb9a
+

@@ -1,0 +1,12 @@
+Test a3 Allowed
+States 2
+1:r1=0;
+1:r1=1;
+Ok
+Witnesses
+Positive: 1 Negative: 1
+Condition exists (1:r1=1)
+Observation a3 Sometimes 1 1
+Time a3 0.00
+Hash=c5c70f63f35c1662768971aee84ae534
+

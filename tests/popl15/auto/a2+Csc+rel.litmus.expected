@@ -1,0 +1,11 @@
+Test a2+Csc+rel Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Csc+rel Always 2 0
+Time a2+Csc+rel 0.00
+Hash=aca211d29d9b3f01d0fcdf74d5d52f46
+

@@ -1,0 +1,11 @@
+Test a7+Rsc Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a7+Rsc Always 2 0
+Time a7+Rsc 0.00
+Hash=55d719d14f79bee939c5c92098e7f1a5
+

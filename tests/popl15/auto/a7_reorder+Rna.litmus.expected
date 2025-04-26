@@ -1,0 +1,12 @@
+Test a7_reorder+Rna Required
+States 1
+
+Undef
+Witnesses
+Positive: 2 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a7_reorder+Rna Always 2 0
+Time a7_reorder+Rna 0.00
+Hash=bfa744793caafda7bcc9b55f64d94530
+

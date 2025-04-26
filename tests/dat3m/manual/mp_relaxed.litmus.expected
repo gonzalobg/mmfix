@@ -1,0 +1,14 @@
+Test mp_relaxed Allowed
+States 3
+1:r0=0; 1:r1=-1;
+1:r0=1; 1:r1=0;
+1:r0=1; 1:r1=1;
+Undef
+Witnesses
+Positive: 1 Negative: 2
+Flag *undef*
+Condition exists (1:r0=1 /\ 1:r1=0)
+Observation mp_relaxed Sometimes 1 2
+Time mp_relaxed 0.00
+Hash=ce3e548ee2aace89b0a3c403830fdf22
+

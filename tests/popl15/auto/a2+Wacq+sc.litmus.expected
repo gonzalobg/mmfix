@@ -1,0 +1,11 @@
+Test a2+Wacq+sc Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Wacq+sc Always 2 0
+Time a2+Wacq+sc 0.00
+Hash=1bacf522bb2c63ca38c7413fd72d54f6
+

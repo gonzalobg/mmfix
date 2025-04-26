@@ -1,0 +1,12 @@
+Test a1_reorder+sc+Crel-acq Allowed
+States 1
+[x]=1; [y]=1;
+Undef
+Witnesses
+Positive: 3 Negative: 0
+Flag *undef*
+Condition exists ([x]=1 /\ [y]=1)
+Observation a1_reorder+sc+Crel-acq Always 3 0
+Time a1_reorder+sc+Crel-acq 0.00
+Hash=154ad26fe1741fa6951f69205c5b8aa4
+

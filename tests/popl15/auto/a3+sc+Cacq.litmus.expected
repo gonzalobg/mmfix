@@ -1,0 +1,12 @@
+Test a3+sc+Cacq Allowed
+States 2
+1:r1=0;
+1:r1=1;
+Ok
+Witnesses
+Positive: 1 Negative: 1
+Condition exists (1:r1=1)
+Observation a3+sc+Cacq Sometimes 1 1
+Time a3+sc+Cacq 0.00
+Hash=7c21521ba152a3ddf676962133ce6760
+

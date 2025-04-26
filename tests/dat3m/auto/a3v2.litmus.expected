@@ -1,0 +1,12 @@
+Test a3v2 Allowed
+States 2
+1:r1=-1;
+1:r1=1;
+Ok
+Witnesses
+Positive: 1 Negative: 1
+Condition exists (1:r1=1)
+Observation a3v2 Sometimes 1 1
+Time a3v2 0.00
+Hash=f22f2651cd47bb7180eaac3df968eea7
+

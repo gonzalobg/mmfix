@@ -1,0 +1,11 @@
+Test a2+Rna+rel-acq Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a2+Rna+rel-acq Always 2 0
+Time a2+Rna+rel-acq 0.00
+Hash=5e4c40431ee2e1050b2ae1bfd8c69e58
+

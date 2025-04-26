@@ -1,0 +1,11 @@
+Test seq2 Allowed
+States 1
+[a]=1; [x]=0; [y]=0;
+No
+Witnesses
+Positive: 0 Negative: 1
+Condition exists ([a]=1 /\ [x]=1 /\ [y]=1)
+Observation seq2 Never 0 1
+Time seq2 0.00
+Hash=39a827d1e1fbbaaf129fdfd23aecd308
+

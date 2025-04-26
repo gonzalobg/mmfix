@@ -1,0 +1,11 @@
+Test a6+rel+Wsc Required
+States 1
+
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition forall (true)
+Observation a6+rel+Wsc Always 2 0
+Time a6+rel+Wsc 0.00
+Hash=1d10daa461ce8c36d77741ba43fb4daf
+

@@ -1,0 +1,12 @@
+Test a6_reorder+rel+Wrlx Required
+States 1
+
+Undef
+Witnesses
+Positive: 3 Negative: 0
+Flag *undef*
+Condition forall (true)
+Observation a6_reorder+rel+Wrlx Always 3 0
+Time a6_reorder+rel+Wrlx 0.00
+Hash=6be5d3edebba0ef44ba0454b6cdfa52a
+

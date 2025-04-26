@@ -1,0 +1,12 @@
+Test a3+sc+Crlx Allowed
+States 2
+1:r1=0;
+1:r1=1;
+Ok
+Witnesses
+Positive: 1 Negative: 1
+Condition exists (1:r1=1)
+Observation a3+sc+Crlx Sometimes 1 1
+Time a3+sc+Crlx 0.00
+Hash=ac8c207a0852a971d50721700a251ee1
+
