@@ -1,0 +1,12 @@
+Test coRR-na Allowed
+States 2
+1:r1=0; 1:r2=0;
+1:r1=1; 1:r2=1;
+Undef
+Witnesses
+Positive: 0 Negative: 2
+Flag *undef*
+Condition exists (1:r1=1 /\ 1:r2=0)
+Observation coRR-na Never 0 2
+Hash=9d46dedd150c808f06fbace03ea9b226
+

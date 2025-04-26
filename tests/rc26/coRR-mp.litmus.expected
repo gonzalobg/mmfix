@@ -1,0 +1,12 @@
+Test coRR-na-mp Allowed
+States 2
+1:r1=0; 1:r2=0; 1:r3=0;
+1:r1=1; 1:r2=1; 1:r3=42;
+Undef
+Witnesses
+Positive: 0 Negative: 2
+Flag *undef*
+Condition exists (1:r1=1 /\ 1:r2=0 /\ 1:r3=0)
+Observation coRR-na-mp Never 0 2
+Hash=66602a332b3d0799868e87aeb30ea5bf
+
