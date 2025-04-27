@@ -1,0 +1,25 @@
+Test iriw-acq-sc Allowed
+States 16
+1:a=0; 1:c=0; 2:b=0; 2:d=0;
+1:a=0; 1:c=0; 2:b=0; 2:d=1;
+1:a=0; 1:c=0; 2:b=1; 2:d=0;
+1:a=0; 1:c=0; 2:b=1; 2:d=1;
+1:a=0; 1:c=1; 2:b=0; 2:d=0;
+1:a=0; 1:c=1; 2:b=0; 2:d=1;
+1:a=0; 1:c=1; 2:b=1; 2:d=0;
+1:a=0; 1:c=1; 2:b=1; 2:d=1;
+1:a=1; 1:c=0; 2:b=0; 2:d=0;
+1:a=1; 1:c=0; 2:b=0; 2:d=1;
+1:a=1; 1:c=0; 2:b=1; 2:d=0;
+1:a=1; 1:c=0; 2:b=1; 2:d=1;
+1:a=1; 1:c=1; 2:b=0; 2:d=0;
+1:a=1; 1:c=1; 2:b=0; 2:d=1;
+1:a=1; 1:c=1; 2:b=1; 2:d=0;
+1:a=1; 1:c=1; 2:b=1; 2:d=1;
+Ok
+Witnesses
+Positive: 1 Negative: 15
+Condition exists (1:a=1 /\ 2:b=1 /\ 1:c=0 /\ 2:d=0)
+Observation iriw-acq-sc Sometimes 1 15
+Hash=092ac43db26f7a4f2fa03fd9a05d5951
+

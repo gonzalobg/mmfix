@@ -1,0 +1,12 @@
+Test sb Allowed
+States 3
+0:a=0; 1:b=1;
+0:a=1; 1:b=0;
+0:a=1; 1:b=1;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (0:a=0 /\ 1:b=0)
+Observation sb Never 0 3
+Hash=f06915caf95e5db3359d7d4f7721d943
+

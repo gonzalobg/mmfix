@@ -1,0 +1,16 @@
+Test rwc+syncs Allowed
+States 7
+1:a=0; 1:b=0; 2:c=0;
+1:a=0; 1:b=0; 2:c=1;
+1:a=0; 1:b=1; 2:c=0;
+1:a=0; 1:b=1; 2:c=1;
+1:a=1; 1:b=0; 2:c=1;
+1:a=1; 1:b=1; 2:c=0;
+1:a=1; 1:b=1; 2:c=1;
+No
+Witnesses
+Positive: 0 Negative: 7
+Condition exists (1:a=1 /\ 1:b=0 /\ 2:c=0)
+Observation rwc+syncs Never 0 7
+Hash=7bdd15c9684219e05e973c9de220eb02
+

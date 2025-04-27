@@ -1,0 +1,13 @@
+Test w+rwc Allowed
+States 4
+1:a=0; 1:b=0; 2:c=1;
+1:a=0; 1:b=1; 2:c=1;
+1:a=1; 1:b=0; 2:c=1;
+1:a=1; 1:b=1; 2:c=1;
+No
+Witnesses
+Positive: 0 Negative: 4
+Condition exists (1:a=1 /\ 1:b=0 /\ 2:c=0)
+Observation w+rwc Never 0 4
+Hash=c385eb8d90736ae99e82bd697740887b
+
