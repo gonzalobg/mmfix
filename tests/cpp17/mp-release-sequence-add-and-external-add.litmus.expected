@@ -1,0 +1,13 @@
+Test mp-release-sequence-store Allowed
+States 4
+1:a=0; 1:b=0;
+1:a=1; 1:b=0;
+1:a=2; 1:b=0;
+1:a=3; 1:b=1;
+No
+Witnesses
+Positive: 0 Negative: 12
+Condition exists (1:a=3 /\ 1:b=0)
+Observation mp-release-sequence-store Never 0 12
+Hash=bc8d93c3353dd421a02fec56ae244036
+
