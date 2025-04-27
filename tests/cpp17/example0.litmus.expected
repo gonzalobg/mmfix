@@ -1,0 +1,13 @@
+Test mp-racy Allowed
+States 4
+2:a=0; 2:b=0;
+2:a=1; 2:b=0;
+2:a=2; 2:b=0;
+2:a=3; 2:b=1;
+No
+Witnesses
+Positive: 0 Negative: 12
+Condition exists (2:a=3 /\ 2:b=0)
+Observation mp-racy Never 0 12
+Hash=d0e36156b6d436c24473692803db06e1
+

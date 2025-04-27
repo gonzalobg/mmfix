@@ -1,0 +1,12 @@
+Test removal Allowed
+States 3
+1:a=0; 1:b=0;
+1:a=1; 1:b=0;
+1:a=2; 1:b=42;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (1:a=2 /\ 1:b=0)
+Observation removal Never 0 3
+Hash=a758bf78b2e4295bab357185e00858a2
+

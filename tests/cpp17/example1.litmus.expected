@@ -1,0 +1,13 @@
+Test mp Allowed
+States 4
+2:a=0; 2:b=0;
+2:a=1; 2:b=0;
+2:a=2; 2:b=0;
+2:a=3; 2:b=1;
+No
+Witnesses
+Positive: 0 Negative: 12
+Condition exists (2:a=3 /\ 2:b=0)
+Observation mp Never 0 12
+Hash=5bebaf9d146ae8aa5426c5fa2268f315
+
