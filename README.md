@@ -18,4 +18,5 @@ TODO:
 - Add more tests:
   - https://github.com/rymrg/rocker/tree/popl21/examples
   - https://github.com/rymrg/rocker/tree/pldi19/examples/submission
+  - Bridging the Gap between Programming Languages and Hardware Weak Memory Models
 - Include new lb shapes (from LICM, MRD, ...)
