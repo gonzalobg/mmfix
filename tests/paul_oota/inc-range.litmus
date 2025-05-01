@@ -1,0 +1,27 @@
+C inc-range
+(*
+ * If a variable is known to be updated only by being incremented by 1,
+ * can invented-load or invented-load-use optimizations take advantage of
+ * this knowledge?  This is the after-optimization litmus test.
+ *)
+{
+	[x] = 0;
+	[y] = 41;
+}
+
+P0(atomic_int *x, atomic_int *y) {
+	int r0 = atomic_load_explicit(y, memory_order_relaxed);
+	int r1 = atomic_load_explicit(y, memory_order_relaxed);
+	if (r0 <= 42)
+		if (r1 >= 42)
+			atomic_store_explicit(x, 1, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y) {
+	atomic_fetch_add_explicit(y, 1, memory_order_relaxed);
+	atomic_fetch_add_explicit(y, 1, memory_order_relaxed);
+}
+
+locations [0:r0;0:r1]
+exists(x=1)
+(* No OOTA cycles *)

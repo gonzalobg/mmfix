@@ -1,0 +1,11 @@
+Test oota-div-ub Allowed
+States 2
+0:r1=0; 1:r2=0;
+0:r1=1; 1:r2=0;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (0:r1=1 /\ 1:r2=1)
+Observation oota-div-ub Never 0 3
+Hash=d16ec1f23db801f79588fc940db3207d
+

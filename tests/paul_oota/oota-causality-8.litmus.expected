@@ -1,0 +1,11 @@
+Test oota-causality-8 Allowed
+States 2
+0:r1=0; 0:r2=1; 1:r3=0;
+0:r1=0; 0:r2=1; 1:r3=1;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (0:r1=1 /\ 0:r2=1)
+Observation oota-causality-8 Never 0 3
+Hash=ca5a44808a0bb9a3da519f93553afcc2
+

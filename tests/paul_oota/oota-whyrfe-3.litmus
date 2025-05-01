@@ -1,0 +1,36 @@
+C oota-whyrfe-3
+(*
+ * Result: Never
+ *
+ * Three-process expansion of JMM Causality Test Case 4, but with max
+ * and min applied.
+ *)
+{
+	[x] = 0;
+	[y] = 0;
+	[z] = 0;
+}
+
+P0(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r1 = atomic_load_explicit(x, memory_order_relaxed);
+	int r2 = r1;
+	if (r2 > 17)
+		r2 = 17;
+	atomic_store_explicit(y, r2, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r3 = atomic_load_explicit(y, memory_order_relaxed);
+	int r4 = r3;
+	if (r4 < 17)
+		r4 = 17;
+	atomic_store_explicit(z, r4, memory_order_relaxed);
+}
+
+P2(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r5 = atomic_load_explicit(z, memory_order_relaxed);
+	atomic_store_explicit(x, r5, memory_order_relaxed);
+}
+
+locations [x;y;z]
+exists(0:r1=17 /\ 1:r3=17 /\ 2:r5=17)

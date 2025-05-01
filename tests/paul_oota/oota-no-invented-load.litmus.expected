@@ -1,0 +1,12 @@
+Test oota-no-invented-load Allowed
+States 3
+0:r1=0; 0:r2=0; [x]=1; [y]=0; [z]=1;
+0:r1=0; 0:r2=0; [x]=1; [y]=1; [z]=1;
+0:r1=1; 0:r2=0; [x]=1; [y]=0; [z]=0;
+No
+Witnesses
+Positive: 0 Negative: 6
+Condition exists (0:r1=1 /\ 0:r2=1)
+Observation oota-no-invented-load Never 0 6
+Hash=a7b618b70ecf436570edce45bc5ffeec
+

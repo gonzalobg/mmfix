@@ -1,0 +1,22 @@
+C duplicated-store
+(*
+ * Result: Sometimes
+ *
+ * Duplicated stores can affect observed behavior.
+ *)
+{
+	[x] = 0;
+}
+
+P0(atomic_int *x) {
+	atomic_store_explicit(x, 1, memory_order_relaxed);
+	// Duplicated store following intended store.
+	atomic_store_explicit(x, 1, memory_order_relaxed);
+}
+
+P1(atomic_int *x) {
+	int r1 = atomic_load_explicit(x, memory_order_relaxed);
+	atomic_store_explicit(x, 2, memory_order_relaxed);
+}
+
+exists(1:r1=1 /\ x=1)

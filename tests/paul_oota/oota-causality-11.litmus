@@ -1,0 +1,48 @@
+C oota-causality-11
+(*
+ * Result: Sometimes
+ *
+ * http://www.cs.umd.edu/~pugh/java/memoryModel/unifiedProposal/testcases.html
+ *
+ * Decision: Allowed. Reordering of independent statements can transform
+ *	the code to:
+ *
+ *		Thread 1:
+ *		r2 = x
+ *		y = r2
+ *		r1 = z
+ *		w = r1
+ *
+ *		Thread 2:
+ *		x = 1
+ *		r3 = y
+ *		z = r3
+ *		r4 = w
+ *
+ * 	after which the behavior in question is SC.
+ *
+ * Note: I added the initialization of w=0.
+ *)
+{
+	[w] = 0;
+	[x] = 0;
+	[y] = 0;
+	[z] = 0;
+}
+
+P0(atomic_int *w, atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r1 = atomic_load_explicit(z, memory_order_relaxed);
+	atomic_store_explicit(w, r1, memory_order_relaxed);
+	int r2 = atomic_load_explicit(x, memory_order_relaxed);
+	atomic_store_explicit(y, r2, memory_order_relaxed);
+}
+
+P1(atomic_int *w, atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r4 = atomic_load_explicit(w, memory_order_relaxed);
+	int r3 = atomic_load_explicit(y, memory_order_relaxed);
+	atomic_store_explicit(z, r3, memory_order_relaxed);
+	atomic_store_explicit(x, 1, memory_order_relaxed);
+}
+
+locations [w;x;y;z]
+exists(0:r1=1 /\ 0:r2=1 /\ 1:r3=1 /\ 1:r4=1)

@@ -1,0 +1,39 @@
+C oota-dg-1
+(*
+ * Result: Sometimes
+ *
+ * Supplied off-list by David Goldblatt on December 6, 2023.
+ *
+ * If P1()'s load from x returns 42, then both legs of the "if" statement
+ * store 42 to z.  So a compiler could test r1, and, if equal to 42,
+ * store 42 to z, and then load from y.  If the load from x is not 42,
+ * then it would load from y and execute as shown.  There is thus no
+ * semantic dependency in P1() in the case where the load from x returns 42.
+ *)
+{
+	[x] = 0;
+	[y] = 0;
+	[z] = 0;
+}
+
+P0(atomic_int *x, atomic_int *y, atomic_int *z) {
+	atomic_store_explicit(x, 42, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r1 = atomic_load_explicit(x, memory_order_relaxed);
+	int r2 = atomic_load_explicit(y, memory_order_relaxed);
+	if (r2)
+		atomic_store_explicit(z, r1, memory_order_relaxed);
+	else
+		atomic_store_explicit(z, 42, memory_order_relaxed);
+}
+
+P2(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r3 = atomic_load_explicit(z, memory_order_relaxed);
+	if (r3 == 42)
+		atomic_store_explicit(y, 1, memory_order_relaxed);
+}
+
+locations [1:r1;2:r3;x;y;z]
+exists(1:r2=1 /\ y=1)

@@ -1,0 +1,15 @@
+Test inc-range Allowed
+States 6
+0:r0=41; 0:r1=41; [x]=0;
+0:r0=41; 0:r1=42; [x]=1;
+0:r0=41; 0:r1=43; [x]=1;
+0:r0=42; 0:r1=42; [x]=1;
+0:r0=42; 0:r1=43; [x]=1;
+0:r0=43; 0:r1=43; [x]=0;
+Ok
+Witnesses
+Positive: 4 Negative: 2
+Condition exists ([x]=1)
+Observation inc-range Sometimes 4 2
+Hash=3ef212d27b7b7e5e3eccf84e0c583af4
+

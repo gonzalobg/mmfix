@@ -1,0 +1,37 @@
+C oota-causality-9
+(*
+ * Result: Sometimes (but requires modeling the compiler)
+ *
+ * http://www.cs.umd.edu/~pugh/java/memoryModel/unifiedProposal/testcases.html
+ *
+ * Decision: Allowed. Similar to test case 8, except that the x is not
+ *	always 0 or 1. However, a compiler might determine that the
+ *	read of x by thread 2 will never see the write by thread 3
+ *	(perhaps because thread 3 will be scheduled after thread 1).
+ *	Thus, the compiler can determine that r1 will always be 0 or 1.
+ *
+ * Note: I used a different deterministic computation, but r2==1.
+ *	I also modified their condition, but it should be equivalent.
+ *)
+{
+	[x] = 0;
+	[y] = 0;
+}
+
+P0(atomic_int *x, atomic_int *y) {
+	int r1 = atomic_load_explicit(x, memory_order_relaxed);
+	int r2 = 1 + r1 * r1 - r1;
+	atomic_store_explicit(y, r2, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y) {
+	int r3 = atomic_load_explicit(y, memory_order_relaxed);
+	atomic_store_explicit(x, r3, memory_order_relaxed);
+}
+
+P2(atomic_int *x, atomic_int *y) {
+	atomic_store_explicit(x, 2, memory_order_relaxed);
+}
+
+locations [1:r3]
+exists(0:r1=1 /\ 0:r2=1)

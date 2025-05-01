@@ -1,0 +1,11 @@
+Test oota-causality-14 Allowed
+States 2
+0:r1=0; 1:r2=0; 1:r3=0; 1:r4=0;
+0:r1=0; 1:r2=1; 1:r3=0; 1:r4=1;
+No
+Witnesses
+Positive: 0 Negative: 2
+Condition exists (0:r1=1 /\ 1:r2=0 /\ 1:r3=1 /\ not (1:r4=0))
+Observation oota-causality-14 Never 0 2
+Hash=a662e071a6b2bba313609f96082d5610
+

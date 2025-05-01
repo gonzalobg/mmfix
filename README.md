@@ -11,6 +11,7 @@ Collection of C++ Memory Model litmus tests in `.litmus` format and reference me
 - [tests/pldi17](./tests/pld17): Ori Lahav, Viktor Vafeiadis, Jeehoon Kang, Chung-Kil Hur, and Derek Dreyer, _Repairing sequential consistency in C/C++11_, PLDI '17.
 - [tests/dat3m](./tests/dat3m): sourced from Dartagnan's test suite at [Dat3M](https://github.com/hernanponcedeleon/Dat3M).
 - [tests/cpp17]: sourced from Hans Boehm, Olivier Giroux, and Viktor Vafeiades, [P0982R1: Weaken Release Sequences](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0982r1.html), 2018.
+- [tests/paul_oota]: https://github.com/paulmckrcu/oota/tree/master/litmus
 
 [herd]: https://github.com/herd/herdtools7
 

@@ -1,0 +1,27 @@
+C oota-causality-4
+(*
+ * Result: Never
+ *
+ * http://www.cs.umd.edu/~pugh/java/memoryModel/unifiedProposal/testcases.html
+ *
+ * Decision: Forbidden: values are not allowed to come out of thin air,
+ *	even if there are other executions in which the thin-air value
+ *	would have been written to that variable by some not out-of-thin
+ *	air means.
+ *)
+{
+	[x] = 0;
+	[y] = 0;
+}
+
+P0(atomic_int *x, atomic_int *y) {
+	int r1 = atomic_load_explicit(x, memory_order_relaxed);
+	atomic_store_explicit(y, r1, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y) {
+	int r2 = atomic_load_explicit(y, memory_order_relaxed);
+	atomic_store_explicit(x, r2, memory_order_relaxed);
+}
+
+exists(0:r1=1 /\ 1:r2=1)

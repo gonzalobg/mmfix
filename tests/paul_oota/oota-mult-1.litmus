@@ -1,0 +1,21 @@
+C oota-mult-1
+{
+	[x] = 1;
+	[y] = 1;
+	[z] = 1;
+}
+
+P0(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r1 = atomic_load_explicit(x, memory_order_relaxed);
+	int r2 = atomic_load_explicit(y, memory_order_relaxed);
+	atomic_store_explicit(z, r1 * r2, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r3 = atomic_load_explicit(z, memory_order_relaxed);
+	atomic_store_explicit(x, r3, memory_order_relaxed);
+	atomic_store_explicit(y, r3, memory_order_relaxed);
+}
+
+exists(0:r1=0 /\ 0:r2=0 /\ 1:r3=0)
+(* No additional OOTA cycles *)

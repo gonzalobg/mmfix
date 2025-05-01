@@ -1,0 +1,30 @@
+C oota-non-lb
+{
+	[x] = 2;
+	[y] = 1;
+	[z] = 1;
+}
+
+P0(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r0 = atomic_load_explicit(y, memory_order_relaxed);
+	int r1 = atomic_load_explicit(z, memory_order_relaxed);
+	int r2 = r0 + r1;
+	atomic_store_explicit(x, r2, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r3 = atomic_load_explicit(x, memory_order_relaxed);
+	atomic_store_explicit(y, r3 / 2, memory_order_relaxed);
+}
+
+P2(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r4 = atomic_load_explicit(x, memory_order_relaxed);
+	atomic_store_explicit(z, r4 / 2, memory_order_relaxed);
+}
+
+locations [0:r0;0:r1;0:r2;1:r3;2:r4]
+exists(x=42 /\ y=21 /\ z=21)
+(*
+ * Above "exists" clause gives OOTA cycle, plus:
+ * exists(x=2*S1 /\ y=S1 /\ z=S1)
+ *)

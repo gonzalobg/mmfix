@@ -1,0 +1,12 @@
+Test oota-unused-load Allowed
+States 3
+0:r1=0; 0:r2=0; [x]=1; [y]=0; [z]=1;
+0:r1=0; 0:r2=0; [x]=1; [y]=1; [z]=1;
+0:r1=1; 0:r2=0; [x]=1; [y]=0; [z]=0;
+No
+Witnesses
+Positive: 0 Negative: 9
+Condition exists (0:r1=1 /\ 0:r2=1)
+Observation oota-unused-load Never 0 9
+Hash=d4779ac32c1b526e80e585491fa63fe8
+

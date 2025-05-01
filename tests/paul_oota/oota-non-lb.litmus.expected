@@ -1,0 +1,10 @@
+Test oota-non-lb Allowed
+States 1
+0:r0=1; 0:r1=1; 0:r2=2; 1:r3=2; 2:r4=2; [x]=2; [y]=1; [z]=1;
+No
+Witnesses
+Positive: 0 Negative: 9
+Condition exists ([x]=42 /\ [y]=21 /\ [z]=21)
+Observation oota-non-lb Never 0 9
+Hash=d9d171df2b67dcde026ff65bb7d8b36a
+

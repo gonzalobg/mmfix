@@ -1,0 +1,11 @@
+Test simple-reordering Allowed
+States 2
+0:r1=0; 1:r2=0;
+0:r1=42; 1:r2=0;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (0:r1=42 /\ 1:r2=42)
+Observation simple-reordering Never 0 3
+Hash=1b186d8f9445998c9c4ac29e062ffb74
+

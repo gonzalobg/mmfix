@@ -1,0 +1,13 @@
+Test duplicated-store Allowed
+States 4
+1:r1=0; [x]=1;
+1:r1=0; [x]=2;
+1:r1=1; [x]=1;
+1:r1=1; [x]=2;
+Ok
+Witnesses
+Positive: 1 Negative: 5
+Condition exists (1:r1=1 /\ [x]=1)
+Observation duplicated-store Sometimes 1 5
+Hash=1e3a5591a2624bee2b8493ae633198c3
+

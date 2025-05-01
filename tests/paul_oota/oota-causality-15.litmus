@@ -1,0 +1,46 @@
+C oota-causality-15
+(*
+ * Result: Never
+ *
+ * http://www.cs.umd.edu/~pugh/java/memoryModel/unifiedProposal/testcases.html
+ *
+ * Decision: Disallowed In all sequentially consistent executions, r1 = 0
+ *	and the program is correctly synchronized. Since the program is
+ *	correctly synchronized in all SC executions, no non-sc behaviors
+ *	are allowed.
+ * For uniformity, this litmus test uses x, y, u, and v.  The mapping from
+ * testcases.html is a->u and b->v.
+ *)
+{
+	[u] = 0;
+	[v] = 0;
+	[x] = 0;
+	[y] = 0;
+}
+
+P0(atomic_int *u, atomic_int *v, atomic_int *x, atomic_int *y) {
+	int r0 = atomic_load_explicit(x, memory_order_seq_cst);
+	int r1;
+	if (r0 == 1)
+		r1 = atomic_load_explicit(u, memory_order_relaxed);
+	else
+		r1 = 0;
+	if (r1 == 0)
+		atomic_store_explicit(y, 1, memory_order_seq_cst);
+	else
+		atomic_store_explicit(v, 1, memory_order_relaxed);
+}
+
+P1(atomic_int *u, atomic_int *v, atomic_int *x, atomic_int *y) {
+	int r2 = atomic_load_explicit(y, memory_order_seq_cst);
+	int r3 = atomic_load_explicit(v, memory_order_relaxed);
+	int r4 = r2 + r3;
+	if (r4)
+		atomic_store_explicit(u, 1, memory_order_relaxed);
+}
+
+P2(atomic_int *u, atomic_int *v, atomic_int *x, atomic_int *y) {
+	atomic_store_explicit(x, 1, memory_order_seq_cst);
+}
+
+exists(0:r0=1 /\ 0:r1=1 /\ 1:r2=0 /\ 1:r3=1 /\ ~1:r4=0)

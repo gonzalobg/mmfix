@@ -1,0 +1,12 @@
+Test invented-store Allowed
+States 3
+1:r1=0;
+1:r1=3;
+1:r1=42;
+Ok
+Witnesses
+Positive: 1 Negative: 2
+Condition exists (1:r1=42)
+Observation invented-store Sometimes 1 2
+Hash=5eb5631d90f3aa70212fcdb018817d8c
+

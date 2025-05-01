@@ -1,0 +1,10 @@
+Test oota-ctrl Allowed
+States 1
+0:r0=0; 1:r1=0; [x]=0; [y]=0;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (0:r0=42 /\ 1:r1=42)
+Observation oota-ctrl Never 0 3
+Hash=db3300c0e3cc86ab1a1477ca446dac5e
+

@@ -1,0 +1,28 @@
+C oota-mult3-1
+{
+	[w] = 2;
+	[x] = 2;
+	[y] = 2;
+	[z] = 2;
+}
+
+P0(atomic_int *w, atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r1 = atomic_load_explicit(w, memory_order_relaxed);
+	int r2 = atomic_load_explicit(x, memory_order_relaxed);
+	int r3 = atomic_load_explicit(y, memory_order_relaxed);
+	atomic_store_explicit(z, r1 * r2 * r3, memory_order_relaxed);
+}
+
+P1(atomic_int *w, atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r4 = atomic_load_explicit(z, memory_order_relaxed);
+	atomic_store_explicit(w, r4, memory_order_relaxed);
+	atomic_store_explicit(x, r4, memory_order_relaxed);
+	atomic_store_explicit(y, r4, memory_order_relaxed);
+}
+
+exists(0:r1=1 /\ 0:r2=1 /\ 0:r3=1 /\ 1:r4=1)
+(*
+ * Additional OOTA cycles, all forbidden by C++:
+ * exists(0:r1=0 /\ 0:r2=0 /\ 0:r3=0 /\ 1:r4=0)
+ * exists(0:r1=-1 /\ 0:r2=-1 /\ 0:r3=-1 /\ 1:r4=-1)
+ *)

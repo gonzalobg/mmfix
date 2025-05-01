@@ -1,0 +1,15 @@
+Test oota-load-invented Allowed
+States 6
+0:r1=0; 0:r1a=0; 0:r1b=0; 0:r2=0; 1:r3=0; [x]=1; [y]=0; [z]=1;
+0:r1=0; 0:r1a=0; 0:r1b=0; 0:r2=0; 1:r3=1; [x]=1; [y]=1; [z]=1;
+0:r1=0; 0:r1a=0; 0:r1b=1; 0:r2=0; 1:r3=0; [x]=1; [y]=0; [z]=1;
+0:r1=0; 0:r1a=0; 0:r1b=1; 0:r2=0; 1:r3=1; [x]=1; [y]=1; [z]=1;
+0:r1=1; 0:r1a=0; 0:r1b=1; 0:r2=1; 1:r3=1; [x]=1; [y]=1; [z]=1;
+0:r1=1; 0:r1a=1; 0:r1b=1; 0:r2=0; 1:r3=0; [x]=1; [y]=0; [z]=0;
+Ok
+Witnesses
+Positive: 1 Negative: 9
+Condition exists (0:r1=1 /\ 0:r2=1)
+Observation oota-load-invented Sometimes 1 9
+Hash=51dd34ec0d2ed28f0cafc304e1e6336c
+

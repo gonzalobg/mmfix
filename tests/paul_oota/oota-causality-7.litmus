@@ -1,0 +1,29 @@
+C oota-causality-7
+(*
+ * Result: Sometimes
+ *
+ * http://www.cs.umd.edu/~pugh/java/memoryModel/unifiedProposal/testcases.html
+ *
+ * Decision: Allowed. Intrathread transformations could move r1 = z to
+ *	after the last statement in thread 1, and x = 1 to before the
+ *	first statement in thread 2.
+ *)
+{
+	[x] = 0;
+	[y] = 0;
+	[z] = 0;
+}
+
+P0(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r1 = atomic_load_explicit(z, memory_order_relaxed);
+	int r2 = atomic_load_explicit(x, memory_order_relaxed);
+	atomic_store_explicit(y, r2, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r3 = atomic_load_explicit(y, memory_order_relaxed);
+	atomic_store_explicit(z, r3, memory_order_relaxed);
+	atomic_store_explicit(x, 1, memory_order_relaxed);
+}
+
+exists(0:r1=1 /\ 0:r2=1 /\ 1:r3=1)

@@ -1,0 +1,27 @@
+C oota-3-2-proc
+(*
+ * Result: Never
+ *
+ * Three-process expansion of JMM Causality Test Case 4, but
+ * collapsed back into two threads.
+ *)
+{
+	[x] = 0;
+	[y] = 0;
+	[z] = 0;
+}
+
+P0(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r1 = atomic_load_explicit(x, memory_order_relaxed);
+	atomic_store_explicit(y, r1, memory_order_relaxed);
+}
+
+P1(atomic_int *x, atomic_int *y, atomic_int *z) {
+	int r2 = atomic_load_explicit(y, memory_order_relaxed);
+	atomic_store_explicit(z, r2, memory_order_relaxed);
+	int r3 = atomic_load_explicit(z, memory_order_relaxed);
+	atomic_store_explicit(x, r3, memory_order_relaxed);
+}
+
+locations [x;y;z]
+exists(0:r1=17 /\ 1:r2=17 /\ 1:r3=17)

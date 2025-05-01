@@ -1,0 +1,10 @@
+Test oota-3-2-proc Allowed
+States 1
+0:r1=0; 1:r2=0; 1:r3=0; [x]=0; [y]=0; [z]=0;
+No
+Witnesses
+Positive: 0 Negative: 3
+Condition exists (0:r1=17 /\ 1:r2=17 /\ 1:r3=17)
+Observation oota-3-2-proc Never 0 3
+Hash=be011d398f752228fa778c7ed9b3f0fc
+
