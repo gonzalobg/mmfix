@@ -1,0 +1,14 @@
+Test mp-release-sequence-store-and-external-add Allowed
+States 5
+1:a=0; 1:b=0;
+1:a=1; 1:b=0;
+1:a=2; 1:b=0;
+1:a=3; 1:b=1;
+1:a=4; 1:b=0;
+No
+Witnesses
+Positive: 0 Negative: 12
+Condition exists (1:a=3 /\ 1:b=0)
+Observation mp-release-sequence-store-and-external-add Never 0 12
+Hash=fbe898fac928b228c2b18d4bc22dc8d3
+

@@ -19,4 +19,5 @@ TODO:
   - https://github.com/rymrg/rocker/tree/popl21/examples
   - https://github.com/rymrg/rocker/tree/pldi19/examples/submission
   - Bridging the Gap between Programming Languages and Hardware Weak Memory Models
+  - mp-release-sequence-store-and-external-store.litmus should not be accepted by rc11? need to talk with Ori
 - Include new lb shapes (from LICM, MRD, ...)
