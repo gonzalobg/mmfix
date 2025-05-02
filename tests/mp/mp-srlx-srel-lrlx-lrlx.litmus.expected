@@ -1,0 +1,12 @@
+Test mp-srlx-srel-lrlx-lrlx Forbidden
+States 3
+1:a=0; 1:b=0;
+1:a=1; 1:b=0;
+1:a=1; 1:b=1;
+No
+Witnesses
+Positive: 2 Negative: 1
+Condition ~exists (1:a=1 /\ 1:b=0)
+Observation mp-srlx-srel-lrlx-lrlx Sometimes 1 2
+Hash=ac777b6ae3c29a249163410bb75409eb
+

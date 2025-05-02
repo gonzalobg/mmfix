@@ -1,0 +1,12 @@
+Test mp-srlx-srlx-lacq-lrlx Allowed
+States 3
+1:a=0; 1:b=0;
+1:a=1; 1:b=0;
+1:a=1; 1:b=1;
+Ok
+Witnesses
+Positive: 3 Negative: 0
+Condition exists (1:a=0 \/ 1:a=1 /\ (1:b=0 \/ 1:b=1))
+Observation mp-srlx-srlx-lacq-lrlx Always 3 0
+Hash=9142bf8f057c9bc2c3e4be74854a439d
+
