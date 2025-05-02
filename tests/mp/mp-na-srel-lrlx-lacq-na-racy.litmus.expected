@@ -1,1 +1,14 @@
-Warning: File "tests/mp/mp-na-srel-lrlx-lacq-na-racy.litmus": Procedure call assert in CSem
+Test mp-na-srel-srlx-lacq-na-racy Allowed
+States 4
+1:a0=0; 1:a1=0; 1:b=0;
+1:a0=0; 1:a1=0; 1:b=1;
+1:a0=0; 1:a1=1; 1:b=1;
+1:a0=1; 1:a1=1; 1:b=0;
+Undef
+Witnesses
+Positive: 0 Negative: 4
+Flag *undef*
+Condition exists (1:a0=0 /\ 1:a1=1 /\ 1:b=0)
+Observation mp-na-srel-srlx-lacq-na-racy Never 0 4
+Hash=960ecdf08a36db2051c0b11044a83f16
+

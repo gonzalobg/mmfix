@@ -12,7 +12,6 @@ P1 (atomic_int* x, int* y) {
   if (a0 == 0) {
     int b = *y;
   }
-  assert(a1 == 1);
 }
 
 exists(1:a0=0 /\ 1:a1=1 /\ 1:b=0)
