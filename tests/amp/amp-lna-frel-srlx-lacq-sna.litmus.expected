@@ -1,0 +1,10 @@
+Test amp-lna-frel-srlx-lacq-sna Forbidden
+States 1
+0:b=0;
+Ok
+Witnesses
+Positive: 2 Negative: 0
+Condition ~exists (0:b=1)
+Observation amp-lna-frel-srlx-lacq-sna Never 0 2
+Hash=5572edb2da826d07bf8a6a67f8b71df8
+

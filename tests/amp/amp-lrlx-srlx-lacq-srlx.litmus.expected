@@ -1,0 +1,10 @@
+Test amp-lrlx-srlx-lacq-srlx Allowed
+States 1
+0:b=0;
+No
+Witnesses
+Positive: 0 Negative: 2
+Condition exists (0:b=1)
+Observation amp-lrlx-srlx-lacq-srlx Never 0 2
+Hash=18bdb75a2118a7e45b592f94e128f685
+

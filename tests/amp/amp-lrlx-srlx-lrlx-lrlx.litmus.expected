@@ -1,0 +1,10 @@
+Test amp-lrlx-srlx-lrlx-srlx Allowed
+States 1
+0:b=0;
+No
+Witnesses
+Positive: 0 Negative: 2
+Condition exists (0:b=1)
+Observation amp-lrlx-srlx-lrlx-srlx Never 0 2
+Hash=c7606d646f235c27fa5523840c4ab09f
+
