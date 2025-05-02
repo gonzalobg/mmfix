@@ -1,0 +1,13 @@
+Test mp-na-srlx-lacq-na-racy Forbidden
+States 3
+1:a=0; 1:b=0;
+1:a=1; 1:b=0;
+1:a=1; 1:b=1;
+Undef
+Witnesses
+Positive: 2 Negative: 1
+Flag *undef*
+Condition ~exists (1:a=1 /\ 1:b=0)
+Observation mp-na-srlx-lacq-na-racy Sometimes 1 2
+Hash=cb260abdf166e7e2941b8f1f3ae96476
+

@@ -1,0 +1,18 @@
+C mp-na-srel-srlx-lacq-na-racy
+{ [x] = 0; [y] = 0;  }
+
+P0 (atomic_int* x, int* y) {
+  *y = 1;
+  atomic_store_explicit(x, 1, memory_order_release);
+}
+
+P1 (atomic_int* x, int* y) {
+  int a0 = atomic_load_explicit(x, memory_order_relaxed);
+  int a1 = atomic_load_explicit(x, memory_order_acquire);
+  if (a0 == 0) {
+    int b = *y;
+  }
+  assert(a1 == 1);
+}
+
+exists(1:a0=0 /\ 1:a1=1 /\ 1:b=0)
