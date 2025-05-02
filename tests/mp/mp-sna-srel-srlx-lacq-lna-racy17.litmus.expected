@@ -1,4 +1,4 @@
-Test mp-na-srel-srlx-lacq-na-racy17 Forbidden
+Test mp-sna-srel-srlx-lacq-lna-racy17 Forbidden
 States 3
 1:a=0; 1:b=0;
 1:a=1; 1:b=1;
@@ -7,6 +7,6 @@ Ok
 Witnesses
 Positive: 3 Negative: 0
 Condition ~exists ((1:a=1 \/ 1:a=2) /\ 1:b=0)
-Observation mp-na-srel-srlx-lacq-na-racy17 Never 0 3
+Observation mp-sna-srel-srlx-lacq-lna-racy17 Never 0 3
 Hash=b84313f3df4fad87df123ad3969e5644
 

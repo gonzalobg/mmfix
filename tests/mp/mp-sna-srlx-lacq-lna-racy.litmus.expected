@@ -1,4 +1,4 @@
-Test mp-na-srlx-lrlx-na Forbidden
+Test mp-sna-srlx-lacq-lna-racy Forbidden
 States 3
 1:a=0; 1:b=0;
 1:a=1; 1:b=0;
@@ -8,6 +8,6 @@ Witnesses
 Positive: 2 Negative: 1
 Flag *undef*
 Condition ~exists (1:a=1 /\ 1:b=0)
-Observation mp-na-srlx-lrlx-na Sometimes 1 2
-Hash=cf2d288d9cdd38149a69c3b856425382
+Observation mp-sna-srlx-lacq-lna-racy Sometimes 1 2
+Hash=cb260abdf166e7e2941b8f1f3ae96476
 

@@ -1,4 +1,4 @@
-C mp-na-frel-2srlx-lacq-na.litmus
+C mp-sna-frel-2srlx-lacq-lna.litmus
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {

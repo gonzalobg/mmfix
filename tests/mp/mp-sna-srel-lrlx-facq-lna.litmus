@@ -1,4 +1,4 @@
-C mp-na-srel-lacq-na
+C mp-sna-srel-lrlx-facq-lna
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {
@@ -7,7 +7,8 @@ P0 (atomic_int* x, int* y) {
 }
 
 P1 (atomic_int* x, int* y) {
-  int a = atomic_load_explicit(x, memory_order_acquire);
+  int a = atomic_load_explicit(x, memory_order_relaxed);
+  atomic_thread_fence(memory_order_acquire);
   if (a == 1) {
     int b = *y;
   }

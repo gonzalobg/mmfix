@@ -1,4 +1,4 @@
-C mp-na-na-na-na-racy
+C mp-sna-sna-lna-lna-racy
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {

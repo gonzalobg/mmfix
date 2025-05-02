@@ -1,4 +1,4 @@
-C mp-na-srel-srlx-lacq-na-racy17
+C mp-sna-srel-srlx-lacq-lna-racy17
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {

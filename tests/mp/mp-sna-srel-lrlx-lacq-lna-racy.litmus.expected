@@ -1,4 +1,4 @@
-Test mp-na-srel-srlx-lacq-na-racy Allowed
+Test mp-sna-srel-srlx-lacq-lna-racy Allowed
 States 4
 1:a0=0; 1:a1=0; 1:b=0;
 1:a0=0; 1:a1=0; 1:b=1;
@@ -9,6 +9,6 @@ Witnesses
 Positive: 0 Negative: 4
 Flag *undef*
 Condition exists (1:a0=0 /\ 1:a1=1 /\ 1:b=0)
-Observation mp-na-srel-srlx-lacq-na-racy Never 0 4
+Observation mp-sna-srel-srlx-lacq-lna-racy Never 0 4
 Hash=960ecdf08a36db2051c0b11044a83f16
 
