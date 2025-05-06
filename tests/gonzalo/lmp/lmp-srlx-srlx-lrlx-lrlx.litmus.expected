@@ -1,0 +1,12 @@
+Test lmp-na-srlx-lrlx-na Forbidden
+States 3
+1:a=0; 1:b=0;
+1:a=1; 1:b=0;
+1:a=2; 1:b=2;
+Ok
+Witnesses
+Positive: 3 Negative: 0
+Condition ~exists (1:a=2 /\ not (1:b=2))
+Observation lmp-na-srlx-lrlx-na Never 0 3
+Hash=e92b8a419206fe9831d6d106d7b43027
+
