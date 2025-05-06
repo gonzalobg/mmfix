@@ -5,7 +5,7 @@ C C11
  * - without the no-thin-air axiom.
  * - external writes break release sequences.
  *
- * Simon Cooksey '25
+ * Simon Cooksey, Gonzalo Brito. 2025.
  *)
 
 include "cos.cat"
