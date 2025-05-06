@@ -1,10 +1,12 @@
 Test c_pq Allowed
-States 1
+States 2
 [p]=0; [q]=0;
-No
+[p]=2; [q]=1;
+Undef
 Witnesses
-Positive: 0 Negative: 1
+Positive: 0 Negative: 2
+Flag *undef*
 Condition exists ([p]=1 /\ [q]=1)
-Observation c_pq Never 0 1
+Observation c_pq Never 0 2
 Hash=3e0e10d3d5812faf9a280f3881ea5f19
 

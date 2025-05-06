@@ -1,12 +1,13 @@
 Test lb Allowed
-States 3
+States 4
 0:r1=0; 1:r2=0;
 0:r1=0; 1:r2=1;
 0:r1=1; 1:r2=0;
-No
+0:r1=1; 1:r2=1;
+Ok
 Witnesses
-Positive: 0 Negative: 3
+Positive: 1 Negative: 3
 Condition exists (0:r1=1 /\ 1:r2=1)
-Observation lb Never 0 3
+Observation lb Sometimes 1 3
 Hash=5dfad14c19d36b1521dba3f07830f960
 

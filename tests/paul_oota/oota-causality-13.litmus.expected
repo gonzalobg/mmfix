@@ -1,10 +1,11 @@
 Test oota-causality-13 Allowed
-States 1
+States 2
 0:r1=0; 1:r2=0;
-No
+0:r1=1; 1:r2=1;
+Ok
 Witnesses
-Positive: 0 Negative: 1
+Positive: 1 Negative: 1
 Condition exists (0:r1=1 /\ 1:r2=1)
-Observation oota-causality-13 Never 0 1
+Observation oota-causality-13 Sometimes 1 1
 Hash=82dfdeefc1038a6b032706834feeedd9
 

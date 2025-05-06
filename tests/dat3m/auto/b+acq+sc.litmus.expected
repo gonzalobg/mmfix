@@ -1,12 +1,13 @@
 Test b+acq+sc Allowed
-States 3
+States 4
 0:r0=0; 1:r1=0;
 0:r0=0; 1:r1=1;
 0:r0=1; 1:r1=0;
-No
+0:r0=1; 1:r1=1;
+Ok
 Witnesses
-Positive: 0 Negative: 3
+Positive: 1 Negative: 3
 Condition exists (0:r0=1 /\ 1:r1=1)
-Observation b+acq+sc Never 0 3
+Observation b+acq+sc Sometimes 1 3
 Hash=645acfa5ab4dab917f76f3a41c9abb12
 

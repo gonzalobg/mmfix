@@ -3,8 +3,8 @@ States 1
 [a]=1; [x]=1; [y]=1;
 Ok
 Witnesses
-Positive: 3 Negative: 0
+Positive: 4 Negative: 0
 Condition exists ([a]=1 /\ [x]=1 /\ [y]=1)
-Observation fig1 Always 3 0
+Observation fig1 Always 4 0
 Hash=26202fe38ab01fd938ce20ef034a0d0b
 

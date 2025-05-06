@@ -3,9 +3,9 @@ States 1
 
 Undef
 Witnesses
-Positive: 2 Negative: 0
+Positive: 3 Negative: 0
 Flag *undef*
 Condition forall (true)
-Observation a7_reorder+Rrlx Always 2 0
+Observation a7_reorder+Rrlx Always 3 0
 Hash=c6d42f1f5d2d47a29f2ea1afa65482fd
 

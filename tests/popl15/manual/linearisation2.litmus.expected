@@ -1,10 +1,11 @@
 Test linearisation2 Allowed
-States 1
+States 2
 0:t=0; [w]=0; [x]=0; [y]=0; [z]=0;
-No
+0:t=2; [w]=1; [x]=1; [y]=1; [z]=1;
+Ok
 Witnesses
-Positive: 0 Negative: 1
+Positive: 1 Negative: 1
 Condition exists (0:t=2 /\ [w]=1 /\ [x]=1 /\ [y]=1 /\ [z]=1)
-Observation linearisation2 Never 0 1
+Observation linearisation2 Sometimes 1 1
 Hash=a053a418e2b4bb0eaa0d717995884b30
 

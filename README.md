@@ -22,3 +22,60 @@ TODO:
   - Bridging the Gap between Programming Languages and Hardware Weak Memory Models
   - mp-release-sequence-store-and-external-store.litmus should not be accepted by rc11? need to talk with Ori
 - Include new lb shapes (from LICM, MRD, ...)
+
+
+# Differences between C++11 and RC11
+
+In RC11, tests of the form:
+
+```cpp
+// Thread 0:
+*y = 1;
+atomic_store_explicit(x, 1, memory_order_release);
+atomic_store_explicit(x, 3, memory_order_relaxed);
+
+// Thread 1
+int a = atomic_load_explicit(x, memory_order_acquire);
+if (a == 3)
+  int b = *y;
+
+// Thread 2
+atomic_store_explicit(x, 2, memory_order_relaxed);
+```
+
+are well-defined (if `a == 3` then `b = 1`) since Thread 2 store does not break the release sequence headed by Thread 1 release store.
+
+However, C++11 and C++14 state:
+
+> A release sequence headed by a release operation A on an atomic object M is a maximal contiguous sub-sequence of side effects in the modification order of M, where the first operation is A, **and every subsequent operation is performed by the same thread that performed A**, or is an atomic read-modify-write operation.
+
+We incorporate this into the [model/cpp11.cat](./model/cpp11.cat) as follows:
+
+```diff
+- let rs = [W]; (sb & loc)?; [W & (RLX | REL | ACQ_REL | ACQ | SC)]; (rf; myrmw)*
++ let rs = ([W]; (sb & loc)?; [W & (RLX | REL | ACQ_REL | ACQ | SC)]) \ (coe; coe); (rf; myrmw)*
+```
+
+Notice also that the comma after the high-lighted bold section above is load bearing.
+As a consequence, the following test is not allowed by C++11 due to the read-modify-write breaking the release sequence:
+
+```cpp
+// Thread 0:
+*y = 1;
+atomic_store_explicit(x, 1, memory_order_release);
+atomic_store_explicit(x, 3, memory_order_relaxed);
+
+// Thread 1
+int a = atomic_load_explicit(x, memory_order_acquire);
+if (a == 3)
+  int b = *y;
+
+// Thread 2
+atomic_fetch_add_explicit(x, 1, memory_order_relaxed);
+```
+
+Furthermore, C++11 lacks the OOTA fix:
+
+```diff
+- acyclic (sb | rf) as no-thin-air
+```

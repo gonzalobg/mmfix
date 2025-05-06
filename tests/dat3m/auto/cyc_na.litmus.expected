@@ -1,10 +1,12 @@
 Test cyc_na Allowed
-States 1
+States 2
 0:r0=0; 1:r1=0;
-No
+0:r0=1; 1:r1=1;
+Undef
 Witnesses
-Positive: 0 Negative: 1
+Positive: 1 Negative: 1
+Flag *undef*
 Condition exists (0:r0=1 /\ 1:r1=1)
-Observation cyc_na Never 0 1
+Observation cyc_na Sometimes 1 1
 Hash=e2c2a2cf7037f092bacffe82f5f8feb4
 
