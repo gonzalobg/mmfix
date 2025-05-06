@@ -1,4 +1,4 @@
-C mp-release-sequence-store-and-external-add allowed
+C mp-release-sequence-store-and-external-add forbidden11-due-to-last-comma-in-wording
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {
