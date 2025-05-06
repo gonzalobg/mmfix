@@ -1,7 +1,11 @@
 C C11
 
 (*
- * Same as RC11 but without the no-thin-air axiom.
+ * Same as RC11 but:
+ * - without the no-thin-air axiom.
+ * - external writes break release sequences.
+ *
+ * Simon Cooksey '25
  *)
 
 include "cos.cat"
@@ -12,7 +16,7 @@ let myrmw = [RMW] | rmw
 
 let rb = (rf^-1; mo) \ id
 let eco = (rf | mo | rb)+
-let rs = [W]; (sb & loc)?; [W & (RLX | REL | ACQ_REL | ACQ | SC)]; (rf; myrmw)*
+let rs = ([W]; (sb & loc)?; [W & (RLX | REL | ACQ_REL | ACQ | SC)]) \ (coe; coe); (rf; myrmw)*
 let sw = [(REL | ACQ_REL | SC)]; ([F]; sb)?; rs; rf; [R & (RLX | REL | ACQ | ACQ_REL | SC)]; (sb; [F])?; [(ACQ | ACQ_REL | SC)]
 let hb = (sb | sw)+
 
