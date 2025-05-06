@@ -1,4 +1,4 @@
-C amp-lna-srlx-lrlx-sna
+C amp-lna-srlx-lrlx-sna-racy
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {

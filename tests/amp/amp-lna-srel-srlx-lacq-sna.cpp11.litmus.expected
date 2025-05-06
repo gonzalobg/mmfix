@@ -1,0 +1,10 @@
+Test amp-lna-srel-srlx-lacq-sna-cpp11 Forbidden
+States 1
+0:b=0;
+Ok
+Witnesses
+Positive: 3 Negative: 0
+Condition ~exists (0:b=1)
+Observation amp-lna-srel-srlx-lacq-sna-cpp11 Never 0 3
+Hash=cc9159c29b578f5e0c7bbbdc91690e0b
+

@@ -1,4 +1,4 @@
-C amp-lna-srel-srlx-lacq-sna-racy17
+C amp-lna-srel-srlx-lacq-sna-cpp11
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {
@@ -14,4 +14,4 @@ P1 (atomic_int* x, int* y) {
   }
 }
 
-exists(0:b=1)
+~exists(0:b=1)
