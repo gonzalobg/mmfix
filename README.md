@@ -102,7 +102,7 @@ if (a == 3)
 
 We incorporate this into the [model/cpp17.cat](./model/cpp17.cat) as follows:
 
-```
+```diff
 - let rs = ([W]; (sb & loc)?; [W & (RLX | REL | ACQ_REL | ACQ | SC)]) \ (coe; coe); (rf; myrmw)*
 + let rs = [W & (RLX | REL | ACQ_REL | ACQ | SC)]; (rf; myrmw)*
 ```
