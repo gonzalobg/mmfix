@@ -1,0 +1,13 @@
+Test mp-rs-add-st-cpp17-racy Allowed
+States 4
+1:a=0; 1:b=0;
+1:a=1; 1:b=0;
+1:a=2; 1:b=1;
+1:a=3; 1:b=1;
+No
+Witnesses
+Positive: 0 Negative: 4
+Condition exists (1:a=3 /\ 1:b=0)
+Observation mp-rs-add-st-cpp17-racy Never 0 4
+Hash=4a202f3028621c64204adc2142ca77f2
+

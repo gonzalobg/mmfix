@@ -1,10 +1,9 @@
-C mp-release-sequence-strel forbidden
+C mp-rs-eadd
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {
   *y = 1;
   atomic_store_explicit(x, 1, memory_order_release);
-  atomic_store_explicit(x, 2, memory_order_release);
 }
 
 P1 (atomic_int* x, int* y) {
@@ -12,6 +11,10 @@ P1 (atomic_int* x, int* y) {
   if (a == 2) {
     int b = *y;
   }
+}
+
+P2 (atomic_int* x) {
+  atomic_fetch_add_explicit(x, 1, memory_order_relaxed);
 }
 
 ~exists(1:a=2 /\ 1:b=0)

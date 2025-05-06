@@ -1,8 +1,8 @@
-C mp-release-sequence-store allowed
+C mp-rs-st-eadd cpp11-allowed-external-add-breaks-rs
 { [x] = 0; [y] = 0;  }
 
-P0 (atomic_int* x, atomic_int* y) {
-  atomic_store_explicit(y, 1, memory_order_relaxed);
+P0 (atomic_int* x, int* y) {
+  *y = 1;
   atomic_store_explicit(x, 1, memory_order_release);
   atomic_store_explicit(x, 3, memory_order_relaxed);
 }
@@ -10,12 +10,12 @@ P0 (atomic_int* x, atomic_int* y) {
 P1 (atomic_int* x, int* y) {
   int a = atomic_load_explicit(x, memory_order_acquire);
   if (a == 3) {
-    int b = atomic_load_explicit(y, memory_order_relaxed);
+    int b = *y;
   }
 }
 
 P2 (atomic_int* x) {
-  atomic_store_explicit(x, 2, memory_order_relaxed);
+  atomic_fetch_add_explicit(x, 1, memory_order_relaxed);
 }
 
-exists(1:a=3 /\ 1:b=0)
+exists([x]=3 /\ 1:a=3 /\ 1:b=0)
