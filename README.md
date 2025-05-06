@@ -79,3 +79,30 @@ Furthermore, C++11 lacks the OOTA fix:
 ```diff
 - acyclic (sb | rf) as no-thin-air
 ```
+
+# Differences between C++11 and C++17
+
+C++17 removed the capability of contiguous same thread writes to extend release sequences:
+
+> A release sequence headed by a release operation A on an atomic object M is a maximal contiguous sub-sequence of side effects in the modification order of M, where the first operation is A, and every subsequent operation is ~performed by the same thread that performed A**, or is~ an atomic read-modify-write operation.
+
+As a consequence, the following test which is well-defined in C++11 (if `a == 3` then `b == 1`) becomes undefined in C++17:
+
+```cpp
+// Thread 0:
+*y = 1;
+atomic_store_explicit(x, 1, memory_order_release);
+atomic_store_explicit(x, 3, memory_order_relaxed);
+
+// Thread 1
+int a = atomic_load_explicit(x, memory_order_acquire);
+if (a == 3)
+  int b = *y;
+```
+
+We incorporate this into the [model/cpp17.cat](./model/cpp17.cat) as follows:
+
+```
+- let rs = ([W]; (sb & loc)?; [W & (RLX | REL | ACQ_REL | ACQ | SC)]) \ (coe; coe); (rf; myrmw)*
++ let rs = [W & (RLX | REL | ACQ_REL | ACQ | SC)]; (rf; myrmw)*
+```
