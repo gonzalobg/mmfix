@@ -1,13 +1,13 @@
-Test mp-sna-srlx-lrlx-lna Forbidden
+Test mp-sna-srlx-lrlx-lna Allowed
 States 3
 1:a=0; 1:b=0;
 1:a=1; 1:b=0;
 1:a=1; 1:b=1;
 Undef
 Witnesses
-Positive: 2 Negative: 1
+Positive: 1 Negative: 2
 Flag *undef*
-Condition ~exists (1:a=1 /\ 1:b=0)
+Condition exists (1:a=1 /\ 1:b=0)
 Observation mp-sna-srlx-lrlx-lna Sometimes 1 2
 Hash=cf2d288d9cdd38149a69c3b856425382
 

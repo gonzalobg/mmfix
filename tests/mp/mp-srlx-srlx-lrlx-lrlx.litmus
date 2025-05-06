@@ -13,4 +13,4 @@ P1 (atomic_int* x, int* y) {
   }
 }
 
-exists( 1:a=0 \/ (1:a=1 /\ (1:b=0 \/ 1:b=1)) )
+exists(1:a=1 /\ 1:b=0)

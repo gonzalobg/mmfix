@@ -5,8 +5,8 @@ States 3
 1:a=1; 1:b=1;
 Ok
 Witnesses
-Positive: 3 Negative: 0
-Condition exists (1:a=0 \/ 1:a=1 /\ (1:b=0 \/ 1:b=1))
-Observation mp-srlx-srlx-lacq-lrlx Always 3 0
+Positive: 1 Negative: 2
+Condition exists (1:a=1 /\ 1:b=0)
+Observation mp-srlx-srlx-lacq-lrlx Sometimes 1 2
 Hash=9142bf8f057c9bc2c3e4be74854a439d
 

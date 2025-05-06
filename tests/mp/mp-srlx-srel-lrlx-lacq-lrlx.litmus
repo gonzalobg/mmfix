@@ -18,4 +18,4 @@ P2 (atomic_int* x, int* y) {
   atomic_store_explicit(x, 2, memory_order_relaxed);
 }
 
-exists(1:a=1 /\ 1:b=0 /\ (1:c=0 \/ 1:c=2))
+exists(1:a=1 /\ 1:b=0 /\ ~(1:c=1))
