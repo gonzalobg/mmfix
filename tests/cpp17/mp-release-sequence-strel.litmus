@@ -1,10 +1,10 @@
-C mp-release-sequence-store forbidden
+C mp-release-sequence-strel forbidden
 { [x] = 0; [y] = 0;  }
 
 P0 (atomic_int* x, int* y) {
   *y = 1;
   atomic_store_explicit(x, 1, memory_order_release);
-  atomic_fetch_add_explicit(x, 1, memory_order_relaxed);
+  atomic_store_explicit(x, 2, memory_order_release);
 }
 
 P1 (atomic_int* x, int* y) {
