@@ -6,5 +6,5 @@ Witnesses
 Positive: 4 Negative: 0
 Condition exists ([a]=1 /\ [x]=1 /\ [y]=1)
 Observation fig1 Always 4 0
-Hash=84d0fa534453ddfbc96eb8d2ace1c3ed
+Hash=1f61ce15fe6a88e6d904d414bf4b4d44
 

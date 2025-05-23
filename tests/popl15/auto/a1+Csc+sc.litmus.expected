@@ -7,5 +7,5 @@ Witnesses
 Positive: 1 Negative: 1
 Condition exists ([x]=1 /\ [y]=1)
 Observation a1+Csc+sc Sometimes 1 1
-Hash=49cb22ca435988991ad6608f9d9bf9f4
+Hash=a01825c6017ecb114de66965578d52e4
 

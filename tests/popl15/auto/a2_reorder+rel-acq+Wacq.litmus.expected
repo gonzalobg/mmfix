@@ -1,1 +1,2 @@
-Warning: File "tests/popl15/auto/a2_reorder+rel-acq+Wacq.litmus", line 5, characters 17-18: unexpected ',' (in prog) (User error)
+Warning: File "tests/popl15/auto/a2_reorder+rel-acq+Wacq.litmus": Non symbolic location with no initial write: '[0]'
+
