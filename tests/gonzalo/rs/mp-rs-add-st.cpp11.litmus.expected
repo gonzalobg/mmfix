@@ -1,13 +1,15 @@
 Test mp-rs-add-st-cpp11 Forbidden
-States 4
+States 5
 1:a=0; 1:b=0;
 1:a=1; 1:b=0;
 1:a=2; 1:b=1;
+1:a=3; 1:b=0;
 1:a=3; 1:b=1;
-Ok
+Undef
 Witnesses
-Positive: 4 Negative: 0
+Positive: 4 Negative: 1
+Flag *undef*
 Condition ~exists (1:a=3 /\ 1:b=0)
-Observation mp-rs-add-st-cpp11 Never 0 4
+Observation mp-rs-add-st-cpp11 Sometimes 1 4
 Hash=4a202f3028621c64204adc2142ca77f2
 

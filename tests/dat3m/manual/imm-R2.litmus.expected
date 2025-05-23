@@ -1,5 +1,5 @@
 Test imm-R2 Allowed
-States 11
+States 12
 1:r0=0; 2:r0=0; 2:r1=0;
 1:r0=0; 2:r0=0; 2:r1=1;
 1:r0=0; 2:r0=1; 2:r1=0;
@@ -10,11 +10,12 @@ States 11
 1:r0=1; 2:r0=0; 2:r1=1;
 1:r0=1; 2:r0=1; 2:r1=1;
 1:r0=1; 2:r0=2; 2:r1=1;
+1:r0=1; 2:r0=3; 2:r1=0;
 1:r0=1; 2:r0=3; 2:r1=1;
-No
+Ok
 Witnesses
-Positive: 0 Negative: 19
+Positive: 1 Negative: 19
 Condition exists (1:r0=1 /\ 2:r0=3 /\ 2:r1=0)
-Observation imm-R2 Never 0 19
+Observation imm-R2 Sometimes 1 19
 Hash=21e090460096e5a839ee629a5ee6b67b
 
