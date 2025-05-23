@@ -4,22 +4,22 @@ C oota-two-source
 	[y] = 0;
 }
 
-P0(atomic_int *x, atomic_int *y) {
+P0(int *x, int *y) {
 	int r1 = atomic_load_explicit(x, memory_order_relaxed);
 	atomic_store_explicit(y, r1, memory_order_relaxed);
 }
 
-P1(atomic_int *x, atomic_int *y) {
+P1(int *x, int *y) {
 	int r2 = atomic_load_explicit(y, memory_order_relaxed);
 	atomic_store_explicit(x, r2, memory_order_relaxed);
 }
 
-P2(atomic_int *x, atomic_int *y) {
+P2(int *x, int *y) {
 	int r3 = atomic_load_explicit(x, memory_order_relaxed);
 	atomic_store_explicit(y, r3, memory_order_relaxed);
 }
 
-P3(atomic_int *x, atomic_int *y) {
+P3(int *x, int *y) {
 	int r4 = atomic_load_explicit(y, memory_order_relaxed);
 	atomic_store_explicit(x, r4, memory_order_relaxed);
 }

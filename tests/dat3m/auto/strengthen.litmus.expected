@@ -8,5 +8,5 @@ Positive: 2 Negative: 1
 Flag *undef*
 Condition exists ([a]=1 /\ [z]=1 /\ [x]=1 /\ [y]=1)
 Observation strengthen Sometimes 2 1
-Hash=d4013d1a90413bb78efeaa0c650823a6
+Hash=96813388847da2e05aeafec783a2273c
 

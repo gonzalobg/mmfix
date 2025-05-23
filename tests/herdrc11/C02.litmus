@@ -2,7 +2,7 @@ C C02
 
 {}
 
-P0 (const int* y,volatile int* x) {
+P0 (const int* y,int* x) {
   int r0 = *x;
   *y = 1;
 }

@@ -14,13 +14,13 @@ C oota-causality-7
 	[z] = 0;
 }
 
-P0(atomic_int *x, atomic_int *y, atomic_int *z) {
+P0(int *x, int *y, int *z) {
 	int r1 = atomic_load_explicit(z, memory_order_relaxed);
 	int r2 = atomic_load_explicit(x, memory_order_relaxed);
 	atomic_store_explicit(y, r2, memory_order_relaxed);
 }
 
-P1(atomic_int *x, atomic_int *y, atomic_int *z) {
+P1(int *x, int *y, int *z) {
 	int r3 = atomic_load_explicit(y, memory_order_relaxed);
 	atomic_store_explicit(z, r3, memory_order_relaxed);
 	atomic_store_explicit(x, 1, memory_order_relaxed);

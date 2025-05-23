@@ -8,5 +8,5 @@ Positive: 2 Negative: 1
 Flag *undef*
 Condition exists ([a]=1 /\ [z]=1 /\ [x]=1 /\ [y]=1)
 Observation roachmotel Sometimes 2 1
-Hash=4f3c7ffdb179e9588a37a6053351fffd
+Hash=d5384e9f0bbd5fbf1ba1e6b116a9035e
 

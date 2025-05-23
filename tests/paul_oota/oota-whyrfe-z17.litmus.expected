@@ -8,5 +8,5 @@ Witnesses
 Positive: 1 Negative: 3
 Condition exists (0:r1=17 /\ 0:r3=17 /\ 1:r5=17)
 Observation oota-whyrfe-z17 Sometimes 1 3
-Hash=0ac1705891c439cf09b4d06a27690eb6
+Hash=82b9525963f067131d1b88dd41f0211a
 

@@ -1,7 +1,7 @@
 C c_reorder
 { [x] = 0; [y] = 0; [p] = 0; [q] = 0; }
 
-P0 (atomic_int *x, atomic_int *y, volatile int* p, volatile int* q) {
+P0 (int *x, int *y, int* p, int* q) {
   int r0 = atomic_load_explicit(x, memory_order_relaxed);
   if (r0) {
     *q = 1;
@@ -12,7 +12,7 @@ P0 (atomic_int *x, atomic_int *y, volatile int* p, volatile int* q) {
   }
 }
 
-P1 (atomic_int *x, atomic_int *y, volatile int* p, volatile int* q) {
+P1 (int *x, int *y, int* p, int* q) {
   int r1 = atomic_load_explicit(y, memory_order_relaxed);
   if (r1) {
     int r2 = *q;

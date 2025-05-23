@@ -6,5 +6,5 @@ Witnesses
 Positive: 0 Negative: 5
 Condition exists (0:r1=1 /\ 0:r2=1 /\ 1:r3=1)
 Observation oota-mult-0 Never 0 5
-Hash=dc0cd2d300923fdda699b77d8cab9b88
+Hash=d703e2c6990eadf9ca4044f6e51ef393
 

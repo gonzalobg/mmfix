@@ -9,5 +9,5 @@ Witnesses
 Positive: 1 Negative: 3
 Condition exists (0:r0=1 /\ 1:r1=1)
 Observation b+acq+sc Sometimes 1 3
-Hash=645acfa5ab4dab917f76f3a41c9abb12
+Hash=f4c9acce455da0095bd9a81f9398dda3
 

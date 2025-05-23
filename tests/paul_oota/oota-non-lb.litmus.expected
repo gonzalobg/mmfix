@@ -6,5 +6,5 @@ Witnesses
 Positive: 0 Negative: 9
 Condition exists ([x]=42 /\ [y]=21 /\ [z]=21)
 Observation oota-non-lb Never 0 9
-Hash=d9d171df2b67dcde026ff65bb7d8b36a
+Hash=db7fa521d3033cd34813353944ef278b
 

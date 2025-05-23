@@ -21,5 +21,5 @@ Witnesses
 Positive: 1 Negative: 15
 Condition exists (2:r1=1 /\ 2:r2=0 /\ 3:r3=1 /\ 3:r4=0)
 Observation IRIW-sc-sc-acq-sc-acq-sc Sometimes 1 15
-Hash=9e24e1df9459fddb824a64e56bf537e1
+Hash=7e79dc44fc68f3a00e9daea47435e3bc
 

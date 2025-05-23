@@ -9,12 +9,12 @@ C mp_relacq
 [y] = 0;
 }
 
-P0 (atomic_int* y, int* x) {
+P0 (int* y, int* x) {
  *x = 1;
  atomic_store_explicit(y,1,memory_order_release);
 }
 
-P1 (atomic_int* y, int* x) {
+P1 (int* y, int* x) {
  int r0 = atomic_load_explicit(y,memory_order_acquire);
  int r1 = -1;
  if (1 == r0) {

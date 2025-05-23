@@ -17,5 +17,5 @@ Witnesses
 Positive: 1 Negative: 23
 Condition exists (2:a=0 /\ 1:b=1 /\ 1:c=3)
 Observation z6.u Sometimes 1 23
-Hash=378151123370e9b0abd632f7e9add855
+Hash=cfc62c1993d060f8d29b77b3762a8440
 

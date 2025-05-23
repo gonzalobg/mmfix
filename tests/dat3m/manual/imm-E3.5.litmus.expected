@@ -1,1 +1,11 @@
-Warning: File "tests/dat3m/manual/imm-E3.5.litmus": Cannot find the size of type atomic_int
+Test imm-E3.5 Allowed
+States 2
+0:r0=0; 1:r0=0;
+0:r0=0; 1:r0=1;
+No
+Witnesses
+Positive: 0 Negative: 2
+Condition exists (0:r0=1 /\ 1:r0=1)
+Observation imm-E3.5 Never 0 2
+Hash=69191f03c5dabf1dcd49d83e7c0138b8
+

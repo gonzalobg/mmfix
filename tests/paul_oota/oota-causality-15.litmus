@@ -18,7 +18,7 @@ C oota-causality-15
 	[y] = 0;
 }
 
-P0(atomic_int *u, atomic_int *v, atomic_int *x, atomic_int *y) {
+P0(int *u, int *v, int *x, int *y) {
 	int r0 = atomic_load_explicit(x, memory_order_seq_cst);
 	int r1;
 	if (r0 == 1)
@@ -31,7 +31,7 @@ P0(atomic_int *u, atomic_int *v, atomic_int *x, atomic_int *y) {
 		atomic_store_explicit(v, 1, memory_order_relaxed);
 }
 
-P1(atomic_int *u, atomic_int *v, atomic_int *x, atomic_int *y) {
+P1(int *u, int *v, int *x, int *y) {
 	int r2 = atomic_load_explicit(y, memory_order_seq_cst);
 	int r3 = atomic_load_explicit(v, memory_order_relaxed);
 	int r4 = r2 + r3;
@@ -39,7 +39,7 @@ P1(atomic_int *u, atomic_int *v, atomic_int *x, atomic_int *y) {
 		atomic_store_explicit(u, 1, memory_order_relaxed);
 }
 
-P2(atomic_int *u, atomic_int *v, atomic_int *x, atomic_int *y) {
+P2(int *u, int *v, int *x, int *y) {
 	atomic_store_explicit(x, 1, memory_order_seq_cst);
 }
 

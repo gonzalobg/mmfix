@@ -6,14 +6,14 @@ C imm-E3.7
 
 {}
 
-P0 (atomic_int* x, atomic_int* y, atomic_int* z) {
+P0 (int* x, int* y, int* z) {
     int r0 = atomic_load_explicit(z, memory_order_relaxed);
     atomic_store_explicit(x, r0 - 1, memory_order_relaxed);
     int r1 = atomic_load_explicit(x, memory_order_relaxed);
     atomic_store_explicit(y, r1, memory_order_relaxed);
 }
 
-P1 (atomic_int* y, atomic_int* z) {
+P1 (int* y, int* z) {
     int r0 = atomic_load_explicit(y, memory_order_relaxed);
     atomic_store_explicit(z, r0, memory_order_relaxed);
 }

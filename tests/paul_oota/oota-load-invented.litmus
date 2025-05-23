@@ -19,7 +19,7 @@ C oota-load-invented
 	[z] = 0;
 }
 
-P0(atomic_int *x, atomic_int *y, atomic_int *z) {
+P0(int *x, int *y, int *z) {
 	int r1a = atomic_load_explicit(x, memory_order_relaxed) != 0;
 	int r1b = atomic_load_explicit(x, memory_order_relaxed) != 0;
 	int r1;
@@ -35,12 +35,12 @@ P0(atomic_int *x, atomic_int *y, atomic_int *z) {
 	}
 }
 
-P1(atomic_int *x, atomic_int *y, atomic_int *z) {
+P1(int *x, int *y, int *z) {
 	int r3 = atomic_load_explicit(z, memory_order_relaxed);
 	atomic_store_explicit(y, r3, memory_order_relaxed);
 }
 
-P2(atomic_int *x, atomic_int *y, atomic_int *z) {
+P2(int *x, int *y, int *z) {
 	atomic_store_explicit(x, 1, memory_order_relaxed);
 }
 

@@ -39,5 +39,5 @@ Witnesses
 Positive: 0 Negative: 54
 Condition exists (1:r1=1 /\ 1:r2=2 /\ 2:r3=0 /\ 3:r4=1)
 Observation example1 Never 0 54
-Hash=c66dd6b1853dd1bfb042d6c4c75f37c9
+Hash=f4d3d9dfcbc9f4317b84f17b62d195c8
 

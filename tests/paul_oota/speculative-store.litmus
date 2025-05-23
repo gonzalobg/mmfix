@@ -8,7 +8,7 @@ C speculative-store
 	[z] = 0;
 }
 
-P0(atomic_int *x, atomic_int y[], atomic_int *z) {
+P0(int *x, int y[], int *z) {
 	int r1 = atomic_load_explicit(z, memory_order_relaxed);
 	// Speculatively executed store
 	atomic_store_explicit(&y[r1], 42, memory_order_relaxed);

@@ -1,12 +1,12 @@
 C mp-sna-sna-lna-lna-racy
 { [x] = 0; [y] = 0;  }
 
-P0 (atomic_int* x, int* y) {
+P0 (int* x, int* y) {
   *y = 1;
   *x = 1;
 }
 
-P1 (atomic_int* x, int* y) {
+P1 (int* x, int* y) {
   int a = *x;
   if (a == 1) {
     int b = *y;

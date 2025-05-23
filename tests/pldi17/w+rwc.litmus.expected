@@ -9,5 +9,5 @@ Witnesses
 Positive: 0 Negative: 4
 Condition exists (1:a=1 /\ 1:b=0 /\ 2:c=0)
 Observation w+rwc Never 0 4
-Hash=c385eb8d90736ae99e82bd697740887b
+Hash=bbb93fd45a8a259abdf052bc3488ac7b
 

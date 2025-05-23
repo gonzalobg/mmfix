@@ -8,5 +8,5 @@ Witnesses
 Positive: 0 Negative: 6
 Condition exists (0:r1=1 /\ 0:r2=1)
 Observation oota-no-invented-load Never 0 6
-Hash=a7b618b70ecf436570edce45bc5ffeec
+Hash=7d845d841d899e4f6763a38ed9072c6d
 

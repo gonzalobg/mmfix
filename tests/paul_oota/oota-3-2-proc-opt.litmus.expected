@@ -7,5 +7,5 @@ Witnesses
 Positive: 0 Negative: 4
 Condition exists (0:r1=17 /\ 1:r2=17 /\ 1:r3=17)
 Observation oota-3-2-proc-opt Never 0 4
-Hash=216c3aae839fa4152ca602f6f41739a6
+Hash=f95c908abe0279a163f888cdfe675da9
 

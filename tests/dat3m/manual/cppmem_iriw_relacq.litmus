@@ -13,20 +13,20 @@ C cppmem_iriw_relacq
 // with the CppMem tool. Original is available online at:
 // http://svr-pes20-cppmem.cl.cam.ac.uk/cppmem/index.html
 
-P0 (atomic_int* x) {
+P0 (int* x) {
   atomic_store_explicit(x, 1, memory_order_release);
 }
 
-P1 (atomic_int* y) {
+P1 (int* y) {
   atomic_store_explicit(y, 1, memory_order_release);
 }
 
-P2 (atomic_int* x, atomic_int* y) {
+P2 (int* x, int* y) {
   int r1 = atomic_load_explicit(x, memory_order_acquire);
   int r2 = atomic_load_explicit(y, memory_order_acquire);
 }
 
-P3 (atomic_int* x, atomic_int* y) {
+P3 (int* x, int* y) {
   int r3 = atomic_load_explicit(y, memory_order_acquire);
   int r4 = atomic_load_explicit(x, memory_order_acquire);
 }

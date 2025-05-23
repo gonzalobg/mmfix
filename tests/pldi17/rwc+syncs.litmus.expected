@@ -12,5 +12,5 @@ Witnesses
 Positive: 0 Negative: 7
 Condition exists (1:a=1 /\ 1:b=0 /\ 2:c=0)
 Observation rwc+syncs Never 0 7
-Hash=7bdd15c9684219e05e973c9de220eb02
+Hash=3a76e808d5708fc28ff52d72006e06f1
 
