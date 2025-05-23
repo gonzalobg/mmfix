@@ -1,10 +1,11 @@
-C RC11
+C CPP2w Dxxxx
 
 (*
- * Repaired C11 model, following
- * "Repairing Sequential Consistency in C/C++11" in PLDI 2017  , by
- * Ori Lahav, Viktor Vafeiadis, Jeehoon Kang, Chung-Kil Hur, and Derek Dreyer
- * Cat coding by Simon Colin.
+ * Same as cpp17 but:
+ * - with the change from Dxxxx to close gap
+ *   in hb for non-atomic operations.
+ *
+ * Simon Cooksey, Gonzalo Brito. 2025.
  *)
 
 include "cos.cat"
@@ -15,7 +16,7 @@ let myrmw = [RMW] | rmw
 
 let rb = (rf^-1; mo) \ id
 let eco = (rf | mo | rb)+
-let rs = [W]; (sb & loc)?; [W & (RLX | REL | ACQ_REL | ACQ | SC)]; (rf; myrmw)*
+let rs = [W & (RLX | REL | ACQ_REL | ACQ | SC)]; (rf; myrmw)*
 let sw = [(REL | ACQ_REL | SC)]; ([F]; sb)?; rs; rf; [R & (RLX | REL | ACQ | ACQ_REL | SC)]; (sb; [F])?; [(ACQ | ACQ_REL | SC)]
 let hb = (sb | sw)+
 
@@ -26,10 +27,10 @@ let pscb = ([SC] | [F & SC]; hb?); scb; ([SC] | hb? ; [F & SC])
 let pscf = [F & SC]; (hb | hb; eco; hb); [F & SC]
 let psc = pscb | pscf
 
-let obsb = ([A]; (eco); [A])+; sb
+let tecotsb = ([A]; (eco); [A])+; sb
 
 let cnf = ((W * _) | (_ * W)) & loc \ ((IW * _) | (_ * IW))
-let dr = (cnf & ext) \ (hb | hb^-1 | A * A | obsb | obsb^-1)
+let dr = (cnf & ext) \ (hb | hb^-1 | A * A | tecotsb | tecotsb^-1)
 
 undefined_unless empty dr as Dr
 
@@ -38,6 +39,6 @@ irreflexive (myrmw; eco) as coherencermw
 empty (myrmw & (rb; mo)) as atomicity
 acyclic psc as SC
 acyclic (sb | rf) as no-thin-air
-acyclic (obsb | fr) as foo
+acyclic (tecotsb | fr) as coherencena
 
 show hb, sb, rmw, dr, obs
