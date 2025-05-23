@@ -1,4 +1,4 @@
-C CPP2w Dxxxx
+C CPP2w
 
 (*
  * Same as cpp17 but:
@@ -39,6 +39,6 @@ irreflexive (myrmw; eco) as coherencermw
 empty (myrmw & (rb; mo)) as atomicity
 acyclic psc as SC
 acyclic (sb | rf) as no-thin-air
-acyclic (tecotsb | fr) as coherencena
+acyclic (tecotsb | rb) as coherencena
 
 show hb, sb, rmw, dr, obs
